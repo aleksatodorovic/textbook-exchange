@@ -1,11 +1,14 @@
 class BooksController < ApplicationController
+    
     def index
         @books = Book.new
     end
 
+
     def home 
         @books = Book.all
     end
+
 
     def create 
         @books = Book.new(m_params)
@@ -16,6 +19,7 @@ class BooksController < ApplicationController
             render 'new'
         end
     end
+
 
     def new 
         @books = Book.new
