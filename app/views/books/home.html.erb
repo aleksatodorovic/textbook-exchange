@@ -1,0 +1,12 @@
+<h1> Books for Sale</h1>
+
+<% @books.each do |x| %>
+    <p><%= x.title %></p>
+<% end %>
+<br/>
+<%= "Message from controller : #{@controller_message}" %>
+<br />
+
+    <a href="/">Add Book Posting</a>
+<br/>
+

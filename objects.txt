@@ -1,0 +1,31 @@
+
+
+BOOK{
+    isbn : str
+    title: str
+    author: str
+    edition: int
+    market price : float
+    price history : array of floats
+    }
+    
+USER{
+    name : str
+    email : str
+    password : str
+    inventory : array of posts
+    rating : float
+    history : array of posts
+    }
+    
+POST{
+    book : BOOK object
+    price : float
+    picture : picture
+    seller : USER object
+    location : str
+    book condition : str
+    description : str
+    }
+    
+    

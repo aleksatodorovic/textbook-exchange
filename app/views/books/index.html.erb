@@ -1,0 +1,14 @@
+<h1>Add a Book</h1>
+
+<%# Comment %>
+
+
+
+<%= form_for @books do |bt| %>
+   <%= bt.label :title, "Title" %>
+   <%= bt.text_field :title %>
+   
+<% end %>
+
+
+<a href="/home">Our Books</a>
