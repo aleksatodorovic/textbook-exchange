@@ -9,6 +9,11 @@ class BooksController < ApplicationController
         @books = Book.all
     end
 
+    def destroy
+        Book.find(params[:id]).destroy
+        flash[:success] = "Book deleted"
+        redirect_to '/home'
+    end
 
     def create 
         @books = Book.new(m_params)
@@ -20,6 +25,9 @@ class BooksController < ApplicationController
         end
     end
 
+    def delete
+        render "hello this works!"
+    end
 
     def new 
         @books = Book.new
@@ -27,7 +35,7 @@ class BooksController < ApplicationController
     
     private 
     def m_params
-        params.require(:book).permit(:title)
+        params.require(:book).permit(:title, :isbn)
     end
 
     def show

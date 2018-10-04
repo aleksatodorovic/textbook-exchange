@@ -2,12 +2,19 @@
 
 <h2> Books for Sale</h2>
 
-
+<table>
+    <tr>
+        <th>Title</th>
+    </tr>
 <% @books.each do |x| %>
-    <p><%= x.title %></p>
+    <tr>
+    <td><%= x.title %></td>
+    </tr>
 <% end %>
+</table>
+
 <br/>
-<%= link_to "delete", @book, method: :delete, data: { confirm: "You sure?" } %>
+<%= link_to "delete", @book, method: :delete %>
 
 <br />
 
