@@ -2,16 +2,15 @@
 
 <h2> Books for Sale</h2>
 
-<table>
-    <tr>
-        <th>Title</th>
-    </tr>
+
+    
+    
 <% @books.each do |x| %>
-    <tr>
-    <td><%= x.title %></td>
-    </tr>
+    
+    <%= x.title %>
+
 <% end %>
-</table>
+
 
 <br/>
 <%= link_to "delete", @book, method: :delete %>
