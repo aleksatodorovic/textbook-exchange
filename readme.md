@@ -6,4 +6,3 @@ selling site that is efficient for used books.
 Thus, sellers post books and user
 find book sellers. 
 
-This is Shees
