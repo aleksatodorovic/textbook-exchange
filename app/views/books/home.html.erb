@@ -2,13 +2,16 @@
 
 <h2> Books for Sale</h2>
 
-
-    
-    
+<table>
+    <tr>
+        <th>Title</th>
+        <th>ISBN</th>
+    </tr>
 <% @books.each do |x| %>
-    
-    <%= x.title %>
-
+    <tr>
+        <td><%= x.title %></td>
+        <td><%= x.isbn %></td>
+    </tr>
 <% end %>
 
 

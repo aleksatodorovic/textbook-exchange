@@ -1,5 +1,9 @@
-Textbook Exchange
-Alex, Greg, Brianna, Shees
+Textbook Exchange:
+by Alex, Greg, Brianna, Shees
 
-This goal of this project is to make a fair and fun textbook exchange website. 
-This is the new commit I am adding. 
+We are trying to create a textbook 
+selling site that is efficient for used books.
+Thus, sellers post books and user
+find book sellers. 
+
+This is Shees

@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20180926202114) do
 
   create_table "books", force: :cascade do |t|
     t.text     "title"
+    t.text     "isbn"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
