@@ -6,16 +6,23 @@
     <tr>
         <th>Title</th>
         <th>ISBN</th>
+        <th>Added by</th>
     </tr>
 <% @books.each do |x| %>
     <tr>
         <td><%= x.title %></td>
         <td><%= x.isbn %></td>
+
+        <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
     </tr>
 <% end %>
 
 
 <br/>
+
+
+
+
 <%= link_to "delete", @book, method: :delete %>
 
 <br />
