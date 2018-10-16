@@ -13,7 +13,7 @@
 #anything = [{:title => 'Atlas Shrugged', :isbn => '123', :creator => 'Greg'}]
 
 puts "started"
-#Book.create(:title => "good to great")
-#Book.create(:title => "software as a service")
+Book.create(:title => "Alex's Password", :isbn => "12345")
+Book.create(:title => "Greg's Password", :isbn => "vnrnjesfhjesfj;aojdiwueeu")
 #Book.create(:title => "all quiet on the western front")
 puts "done"

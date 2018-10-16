@@ -1,44 +1,32 @@
 class BooksController < ApplicationController
-    
     def index
-        @books = Book.new
+        @book = Book.new
     end
-
 
     def home 
         @books = Book.all
     end
 
-    def destroy
-        Book.find(params[:id]).destroy
-        flash[:success] = "Book deleted"
-        redirect_to '/home'
-    end
-
     def create 
-        @books = Book.new(m_params)
+        @book = Book.new(book_params)
         
-        if @books.save
+        if @book.save
             redirect_to '/home'
         else 
             render 'new'
         end
     end
-
-    def delete
-        render "hello this works!"
-    end
-
-    def new 
-        @books = Book.new
-    end
     
-    private 
-    def m_params
-        params.require(:book).permit(:title, :isbn)
+    def new 
+        @book = Book.new
     end
 
     def show
         @books = Book.find(params[:id])
+    end
+    
+    private
+    def book_params
+        params.require(:book).permit(:title, :isbn, :author)
     end
 end

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match ':controller(/:action(/:id))', :via => :get
   root 'books#index'
   get 'home' => 'books#home'
+  get 'books' => 'books#home'
   delete 'home/delete' => 'books#delete'
   resources :books
 

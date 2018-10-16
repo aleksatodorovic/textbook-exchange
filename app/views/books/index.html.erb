@@ -4,14 +4,18 @@
 
 
 
-<%= form_for @books do |bt| %>
+<%= form_for @book do |bt| %>
    <%= bt.label :title, "Title" %>
    <%= bt.text_field :title %>
    
    <%= bt.label :isbn, "ISBN" %>
-   <%# <%= bt.text_field :isbn %>
+   <%= bt.text_field :isbn %>
    
+   <%= bt.label :author, "Author" %>
+   <%= bt.text_field :author %>
+   
+   <%= bt.submit "create" %> 
 <% end %>
 
-
+<br>
 <a href="/home">Our Books</a>
