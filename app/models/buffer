@@ -1,0 +1,55 @@
+class BooksController < ApplicationController
+    
+    def index
+        @books = Book.all
+    end
+
+
+    def home 
+        @books = Book.all
+    end
+
+    def destroy
+        Book.find(params[:id]).destroy
+        flash[:success] = "Book deleted"
+        redirect_to '/home'
+    end
+
+    def create 
+        @book = Book.new(m_params)
+        
+        if @book.save
+            redirect_to '/home'
+        else 
+            render "new"
+        end
+    end
+
+    def delete
+        render "hello this works"
+    end
+
+    def new 
+        @book = Book.new
+    end
+    
+    private 
+    def m_params
+        params.require(:book).permit(:title)
+    end
+
+    def show
+        id = params[:id]
+        @books = Book.find(params[:id])
+    end
+end
+
+
+
+<h2> Books for Sale</h2>
+<% @books.each do |x| %>
+    <p><%= x.title %></p>
+    <p><%= x.isbn %></p>
+    <p><%= x.author %></p>
+    <br/>
+<% end %>
