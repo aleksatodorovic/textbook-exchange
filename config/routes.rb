@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   
 
   # get 'books/index'
+  
+	get '/users' => 'users#uindex'
+	get '/users/:id' => 'users#show', as: :user
+	get '/books/:id' => 'books#show', as: :book
   match ':controller(/:action(/:id))', :via => :get
   root 'books#index'
   get 'home' => 'books#home'

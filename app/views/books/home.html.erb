@@ -2,20 +2,36 @@
 <table width = 100%>
     <tr>
         <th>Title</th>
+<<<<<<< HEAD
         <th>Author</th>
         <th>ISBN</th>
+=======
+        <th>ISBN</th>
+        <th>Added by</th>
+>>>>>>> 93a909a07d84395832d4cc8228f134c807eebcff
     </tr>
     
 <%= @books.each do |x| %>
     <tr>
+<<<<<<< HEAD
     <td><%= x[:title] %></td>
     <td><%= x[:author] %></td>
     <td><%= x[:isbn] %></td>
+=======
+        <td><%= x.title %></td>
+        <td><%= x.isbn %></td>
+
+        <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
+>>>>>>> 93a909a07d84395832d4cc8228f134c807eebcff
     </tr>
 <% end %>
-</table>
+
 
 <br/>
+
+
+
+
 <%= link_to "delete", @book, method: :delete %>
 
 <br />
