@@ -18,8 +18,9 @@ class BooksController < ApplicationController
 
     def create 
         @books = Book.new(m_params)
+
         
-        if @books.save
+        if @books.save 
             redirect_to '/home'
         else 
             render 'new'
@@ -37,6 +38,10 @@ class BooksController < ApplicationController
     private 
     def m_params
         params.require(:book).permit(:title, :isbn)
+    end
+    
+    def u_params
+        params.require(:user).permit(:name, :phone)
     end
 
     def show
