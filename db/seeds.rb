@@ -13,8 +13,13 @@
 #anything = [{:title => 'Atlas Shrugged', :isbn => '123', :creator => 'Greg'}]
 
 puts "started"
+<<<<<<< HEAD
+Book.create(:title => "Alex's Password", :isbn => "12345")
+Book.create(:title => "Greg's Password", :isbn => "vnrnjesfhjesfj;aojdiwueeu")
+=======
 #Book.create!(:title => "good to great", :isbn => "12345")
 #Book.create(:title => "software as a service")
+>>>>>>> 93a909a07d84395832d4cc8228f134c807eebcff
 #Book.create(:title => "all quiet on the western front")
 u1 = User.create(name: "Shrek", phone: "555-5555")
 Book.create(title: "Swamp Living for Dummies", isbn: "9999999999", user_id: u1.id)

@@ -1,16 +1,18 @@
 
-
 <h2> Books for Sale</h2>
 
 <table border="1">
+<h2> Our Books</h2>
     <tr>
         <th>Title</th>
         <th>ISBN</th>
         <th>Added by</th>
         <th>Phone Number</th>
+
     </tr>
-<% @books.each do |x| %>
-    <tr>
+    
+<%= @books.each do |x| %>
+
         <td><%= x.title %></td>
         <td><%= x.isbn %></td>
         <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
@@ -23,5 +25,3 @@
 
 
     <a href="/">Add Book Posting</a>
-<br/>
-

@@ -1,13 +1,12 @@
 class BooksController < ApplicationController
     
     def index
-        @books = Book.new
+        @books = Book.all
     end
 
 
     def home 
         @books = Book.all
-        @users = User.all
     end
 
     def destroy
@@ -17,31 +16,40 @@ class BooksController < ApplicationController
     end
 
     def create 
-        @books = Book.new(m_params)
-
+        @book = Book.new(m_params)
         
-        if @books.save 
+        if @book.save
             redirect_to '/home'
         else 
-            render 'new'
+            render "new"
         end
     end
 
     def delete
-        render "hello this works!"
+        render "hello this works"
     end
 
     def new 
-        @books = Book.new
+        @book = Book.new
     end
     
     private 
     def m_params
-        params.require(:book).permit(:title, :isbn)
+        params.require(:book).permit(:title)
     end
 
-
     def show
+        id = params[:id]
         @books = Book.find(params[:id])
     end
 end
+
+
+
+<h2> Books for Sale</h2>
+<% @books.each do |x| %>
+    <p><%= x.title %></p>
+    <p><%= x.isbn %></p>
+    <p><%= x.author %></p>
+    <br/>
+<% end %>

@@ -4,11 +4,10 @@ class CreateBooks < ActiveRecord::Migration
       t.text :title
       t.text :isbn
 
-      t.text :author
+      #t.text :author
+
+      t.references :user
       t.timestamps
-
-
-
     end
   end
 end
