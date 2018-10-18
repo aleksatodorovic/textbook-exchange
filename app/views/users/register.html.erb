@@ -1,0 +1,20 @@
+<h2>Register</h2>
+
+<%# Comment %>
+
+
+
+<%= form_for @users do |bt| %>
+   <%= bt.label :name, "Name" %>
+   <%= bt.text_field :name %>
+   
+   <%= bt.label :phone, "Phone" %>
+   <%= bt.text_field :phone %>
+
+   
+   <%= bt.submit "Register" %>
+
+
+<% end %>
+
+

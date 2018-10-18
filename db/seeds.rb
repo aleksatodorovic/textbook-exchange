@@ -20,4 +20,5 @@ Book.create(title: "The Ogre Scouts Handbook", isbn: "0000000000", user_id: u1.i
 
 u2 = User.create(name: "Dr. Kurdia", phone: "011-0011")
 Book.create(title: "Shrek the transcript of the movie", isbn: "?????????", user_id: u2.id)
+Book.create(title: "Shrek 2 the transcript of the movie", isbn: "?????????", user_id: u2.id)
 puts "done"

@@ -7,11 +7,14 @@ Rails.application.routes.draw do
 	get '/users/:id' => 'users#show', as: :user
 	get '/books/:id' => 'books#show', as: :book
   match ':controller(/:action(/:id))', :via => :get
-  root 'books#index'
+  root 'books#home'
   get 'home' => 'books#home'
-  get 'books' => 'books#home'
+  get 'books' => 'books#index'
+  get 'register' => 'users#register'
+
   delete 'home/delete' => 'books#delete'
   resources :books
+  resources :users
 
   
   
