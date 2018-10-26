@@ -52,6 +52,9 @@ group :development do
   gem 'spring'
 end
 
+gem 'bootstrap'
+gem 'jquery-rails'
+
 group :production do
   #heroku doesn't like sqlite3 so use pg instead
   gem 'pg'
