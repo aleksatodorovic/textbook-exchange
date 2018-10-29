@@ -10,10 +10,12 @@
    
    <%= bt.label :isbn, "ISBN" %>
    <%= bt.text_field :isbn %>
-   
+
+   <%= bt.collection_select(:user_id, User.all, :id, :name, :include_blank => "Please select") %>
    <%= bt.submit "Add posting" %>
-   
+
+
 <% end %>
 
-
-<a href="/home">Our Books</a>
+<br>
+<a href="/index">Our Books</a>

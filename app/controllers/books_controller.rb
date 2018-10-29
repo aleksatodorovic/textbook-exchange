@@ -1,12 +1,15 @@
 class BooksController < ApplicationController
     
     def index
-        @books = Book.new
+        @books = Book.new()
     end
 
 
     def home 
         @books = Book.all
+        @books.order(:timestamps)
+        @users = User.all
+        @books.reverse_order!
     end
 
     def destroy
@@ -17,8 +20,9 @@ class BooksController < ApplicationController
 
     def create 
         @books = Book.new(m_params)
+
         
-        if @books.save
+        if @books.save 
             redirect_to '/home'
         else 
             render 'new'
@@ -32,13 +36,14 @@ class BooksController < ApplicationController
     def new 
         @books = Book.new
     end
-    
-    private 
-    def m_params
-        params.require(:book).permit(:title, :isbn)
-    end
-
     def show
         @books = Book.find(params[:id])
     end
+    private 
+    def m_params
+        params.require(:book).permit(:title, :isbn, :user_id)
+    end
+
+
+    
 end
