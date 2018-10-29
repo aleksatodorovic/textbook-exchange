@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Textbook Exchange</title>
-  <%#= stylesheet_link_tag 'books' %>
-  <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%#= csrf_meta_tags %>
   
-  <%#= favicon_link_tag asset_path('if_longico-23_214848.png'), :rel => 'icon', :type =>  'image/png' %>
-  <h1>A Novel Marketplace</h1>
+  <title>Textbook Exchange</title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">A Novel Marketplace</h1>
+      <p class="lead">A marketplace devoted to books.</p>
+    </div>
+  </div>
 
-  <a href="/home">Our Books</a>
-  <a href="/users">Our Users</a>
-  <a href="/register">Register</a>
 
-  <p>_______________________________________________________________</p>
+
+
 </head>
 <body>
+  
+  
+<div class="topnav">
+  <a href="/home" class="active">Our Books</a>
+  <a href="/users">Our Users</a>
+  <a href="/register">Register</a>
+</div>
 
-<%= yield %>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+
+
 
 
 </body>
