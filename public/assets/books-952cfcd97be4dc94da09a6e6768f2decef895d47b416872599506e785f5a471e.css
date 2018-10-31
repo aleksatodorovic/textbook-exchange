@@ -1,0 +1,16 @@
+/* line 4, /home/ubuntu/workspace/app/assets/stylesheets/books.scss */
+body {
+  background-color: #fffcc0;
+}
+
+/* line 8, /home/ubuntu/workspace/app/assets/stylesheets/books.scss */
+h1, h2, p, th, td {
+  font-family: "Helvetica", sans-serif;
+  color: #000000;
+}
+
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/books.scss */
+a {
+  font-family: "Helvetica", sans-serif;
+  color: #0250f7;
+}

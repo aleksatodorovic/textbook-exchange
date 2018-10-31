@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
 
+  get 'sessions/new'
+
   # get 'books/index'
   
 	get '/users' => 'users#uindex'
@@ -11,6 +13,11 @@ Rails.application.routes.draw do
   get 'home' => 'books#home'
   get 'books' => 'books#index'
   get 'register' => 'users#register'
+  
+  get '/assets/book.jpg' => 'application#send_pic'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
 
   delete 'home/delete' => 'books#delete'
   resources :books

@@ -7,14 +7,20 @@ class UsersController < ApplicationController
        @users = User.new 
     end
     
+    def login
+        @users= User.all
+    end
+    
     def create 
         @users = User.new(u_params)
 
         
         if @users.save 
+            log_in @user
             redirect_to '/home'
         else 
-            render 'new'
+            flash.now[:notice] = "Error adding user"
+            redirect_to '/register'
         end
     end
 	
@@ -25,6 +31,6 @@ class UsersController < ApplicationController
 	
 	private 
     def u_params
-        params.require(:user).permit(:name, :phone)
+        params.require(:user).permit(:name, :password, :phone)
     end
 end

@@ -20,12 +20,20 @@
 </head>
 <body>
   
-  
+
 <div class="topnav">
   <a href="/home" class="active">Our Books</a>
+  <% if logged_in? %>
   <a href="/users">Our Users</a>
-  <a href="/register">Register</a>
+  <% else %>
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
+  <% end %>
+  
+
 </div>
+
+
 
 
 <div class="container">
