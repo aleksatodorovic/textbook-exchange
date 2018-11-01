@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 
         
         if @users.save 
-            log_in @user
+            #log_in @user
             redirect_to '/home'
         else 
             flash.now[:notice] = "Error adding user"
