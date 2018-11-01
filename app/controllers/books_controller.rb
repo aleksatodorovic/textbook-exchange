@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
     
     def index
-        @book = Book.new()
+        @books = Book.new()
         @users = User.all
         if params[:search]
             @search_term = params[:search]
@@ -43,7 +43,7 @@ class BooksController < ApplicationController
             flash.now[:notice] = "Error adding book"
             redirect_to '/books'
         end
-        render new
+
     end
 
     def delete
@@ -51,7 +51,7 @@ class BooksController < ApplicationController
     end
 
     def new 
-        @book = Book.new
+        @books = Book.new
     end
     
     def show
