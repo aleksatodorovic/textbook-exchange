@@ -1,13 +1,4 @@
-
-<h2> Books for Sale</h2>
-
-
-<%= form_for "",url: books_path, role: "search", method: :get do %> 
-  <p>
-    <%= text_field_tag :search, @search_term, placeholder: "Search..." %>
-  </p>
-<% end %>
-
+<h2> Your results </h2>
 
 <table border="1">
     <tbody>
@@ -25,9 +16,7 @@
                 <td><%= x.isbn %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
                 <td><%= @users.find_by_id(x.user).phone unless @users.find_by_id(x.user).nil?%></td>
-                <% if logged_in? %>
-                    <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-                <% end %>
+                <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
             </tr>
         <% end %>
     </tbody>

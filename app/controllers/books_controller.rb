@@ -2,8 +2,23 @@ class BooksController < ApplicationController
     
     def index
         @books = Book.new()
+        @users = User.all
+        if params[:search]
+            @search_term = params[:search]
+            @books = Book.search_by(@search_term)
+        end
     end
-
+    
+    def search
+        @users = User.all
+        @books = Book.search(params[:search])
+	    if params[:search]
+		    @books = Book.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"])
+	    else
+		    @books = Book.all
+	    end
+	    #redirect_to '/search'
+    end
 
     def home 
         @books = Book.all
@@ -26,8 +41,10 @@ class BooksController < ApplicationController
         if @books.save 
             redirect_to '/home'
         else 
-            render 'new'
+            flash.now[:notice] = "Error adding book"
+            redirect_to '/books'
         end
+
     end
 
     def delete
@@ -37,6 +54,7 @@ class BooksController < ApplicationController
     def new 
         @books = Book.new
     end
+    
     def show
         if params[:search]
             @books = Book.search(params[:search]).order("created_at DESC")
