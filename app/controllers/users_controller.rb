@@ -14,12 +14,11 @@ class UsersController < ApplicationController
     end
     
     def create 
-        @users = User.new(u_params)
+        @user = User.new(u_params)
 
-        
-        if @users.save 
+        if @user.save 
             #log_in @user
-            redirect_to '/home'
+            redirect_to root_url, :notice => "Signed up!"
         else 
             flash.now[:notice] = "Error adding user"
             redirect_to '/register'
@@ -27,9 +26,13 @@ class UsersController < ApplicationController
     end
 	
 	def show 
-  	@users = User.find(params[:id]) 
-  	@books = @user.books 
+  	    @users = User.find(params[:id]) 
+  	    @books = @user.books 
 	end
+	
+	def new 
+        @user = User.new
+    end
 	
 	private 
     def u_params

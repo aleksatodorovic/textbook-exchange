@@ -43,6 +43,7 @@ class BooksController < ApplicationController
             flash.now[:notice] = "Error adding book"
             redirect_to '/books'
         end
+        render new
     end
 
     def delete
@@ -50,8 +51,9 @@ class BooksController < ApplicationController
     end
 
     def new 
-        @books = Book.new
+        @book = Book.new
     end
+    
     def show
         @books = Book.find(params[:id])
     end
