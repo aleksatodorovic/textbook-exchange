@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/assets/book.jpg' => 'application#send_pic'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
-  delete 'logout'  => 'sessions#destroy'
+  get 'logout'  => 'sessions#destroy'
 
   delete 'home/delete' => 'books#delete'
   resources :books
