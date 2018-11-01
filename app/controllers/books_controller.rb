@@ -40,7 +40,8 @@ class BooksController < ApplicationController
         if @books.save 
             redirect_to '/home'
         else 
-            render 'new'
+            flash.now[:notice] = "Error adding book"
+            redirect_to '/books'
         end
     end
 

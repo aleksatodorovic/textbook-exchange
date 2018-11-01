@@ -23,9 +23,10 @@
                 <td><%= x.isbn %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
                 <td><%= @users.find_by_id(x.user).phone unless @users.find_by_id(x.user).nil?%></td>
-                <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                <% if logged_in? %>
+                    <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                <% end %>
             </tr>
         <% end %>
     </tbody>
 </table>
-<a href="/books">Add Book Posting</a>
