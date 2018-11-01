@@ -1,6 +1,5 @@
-class CreateUsers < ActiveRecord::Migration [5.1]
+class CreateUsers < ActiveRecord::Migration
   def change
-    add_column :books
     create_table :users do |t|
       t.text :name
       t.text :phone

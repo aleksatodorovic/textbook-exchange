@@ -1,9 +1,24 @@
 class BooksController < ApplicationController
     
     def index
-        @books = Book.new()
+        @book = Book.new()
+        @users = User.all
+        if params[:search]
+            @search_term = params[:search]
+            @books = Book.search_by(@search_term)
+        end
     end
-
+    
+    def search
+        @users = User.all
+        @books = Book.search(params[:search])
+	    if params[:search]
+		    @books = Book.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"])
+	    else
+		    @books = Book.all
+	    end
+	    #redirect_to '/search'
+    end
 
     def home 
         @books = Book.all
