@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration
       #t.text :author
 
       t.references :user
-      t.timestamps
+      t.timestamps 
     end
   end
 end

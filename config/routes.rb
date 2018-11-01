@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   get 'home' => 'books#home'
   get 'books' => 'books#index'
   get 'register' => 'users#register'
+  resources :books do 
+    collection do 
+      get :search
+    end
+  end
 
   delete 'home/delete' => 'books#delete'
   resources :books

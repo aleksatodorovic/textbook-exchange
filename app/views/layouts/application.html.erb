@@ -10,7 +10,7 @@
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-4">A Novel Marketplace</h1>
-      <p class="lead">A marketplace devoted to books.</p>
+      <p class="lead">A marketplace devoted to books</p>
     </div>
   </div>
 
@@ -25,6 +25,10 @@
   <a href="/home" class="active">Our Books</a>
   <a href="/users">Our Users</a>
   <a href="/register">Register</a>
+  <%= form_tag(search_books_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Title" %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
 </div>
 
 
