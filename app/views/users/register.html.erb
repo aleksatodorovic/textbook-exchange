@@ -5,13 +5,13 @@
 
 
 <%= form_for @users do |bt| %>
-   <%= bt.label :name, "Name" %>
+   <%= bt.label :name, "Name", required: true %>
    <%= bt.text_field :name %>
    
-   <%= bt.label :password, "Password" %>
+   <%= bt.label :password, "Password", minlength: 8, required: true %>
    <%= bt.password_field :password %>
    
-   <%= bt.label :phone, "Phone" %>
+   <%= bt.label :phone, "Phone", minlength: 9, maxlength: 10, required: true %>
    <%= bt.text_field :phone %>
 
    

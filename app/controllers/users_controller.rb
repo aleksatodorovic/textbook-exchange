@@ -33,6 +33,10 @@ class UsersController < ApplicationController
 	def new 
         @user = User.new
     end
+    
+    def phone_number=(value)
+        super(value.blank? ? nil : value.gsub(/[^\w\s]/, '')) 
+    end
 	
 	private 
     def u_params
