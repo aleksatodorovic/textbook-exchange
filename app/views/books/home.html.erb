@@ -1,6 +1,7 @@
 
 <h2> Novels for Sale</h2>
 
+
 <%= form_for "",url: books_path, role: "search", method: :get do %> 
   <p>
     <%= text_field_tag :search, @search_term, placeholder: "Search..." %>

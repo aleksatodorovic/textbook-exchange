@@ -14,12 +14,14 @@ Rails.application.routes.draw do
   get 'home' => 'books#home'
   get 'new' => 'books#new'
   get 'register' => 'users#register'
+
   get 'profile' => 'users#profile'
   
   get '/assets/book.jpg' => 'application#send_pic'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   get 'logout'  => 'sessions#destroy'
+
 
   delete 'home/delete' => 'books#delete'
   

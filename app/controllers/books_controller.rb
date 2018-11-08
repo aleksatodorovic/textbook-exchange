@@ -24,6 +24,7 @@ class BooksController < ApplicationController
         @books.order(:timestamps)
         @users = User.all
         @books.reverse_order!
+            
     end
 
     def destroy
@@ -52,7 +53,13 @@ class BooksController < ApplicationController
     end
     
     def show
+        if params[:search]
+            @books = Book.search(params[:search]).order("created_at DESC")
+        else
+            @books = Book.all.order("created_at DESC")
+        end
         @books = Book.find(params[:id])
+        
     end
     private 
     def m_params
