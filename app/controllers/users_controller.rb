@@ -1,9 +1,8 @@
 class UsersController < ApplicationController
+    
     def uindex
 		@users = User.all
     end
-    
-    
     
     def register
        @users = User.new 
@@ -25,6 +24,10 @@ class UsersController < ApplicationController
         end
     end
 	
+	def profile
+	    @user = User.newS
+	end
+	
 	def show 
   	    @users = User.find(params[:id]) 
   	    @books = @user.books 
@@ -32,6 +35,10 @@ class UsersController < ApplicationController
 	
 	def new 
         @user = User.new
+    end
+    
+    def phone_number=(value)
+        super(value.blank? ? nil : value.gsub(/[^\w\s]/, '')) 
     end
 	
 	private 
