@@ -1,12 +1,10 @@
 class BooksController < ApplicationController
     
     def index
-        @books = Book.new()
+        @books = Book.where(["title LIKE ?","%#{params[:search]}%"])
+        @books.order(:timestamps)
+        @books.reverse_order!
         @users = User.all
-        if params[:search]
-            @search_term = params[:search]
-            @books = Book.search_by(@search_term)
-        end
     end
     
     def search
@@ -35,8 +33,6 @@ class BooksController < ApplicationController
 
     def create 
         @books = Book.new(m_params)
-
-        
         if @books.save 
             redirect_to '/home'
         else 

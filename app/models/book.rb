@@ -4,4 +4,9 @@ class Book < ActiveRecord::Base
     validates :isbn,  presence: true
     validates_presence_of :user
     
+    def self.search(terms)
+        if terms
+            where("email ILIKE ?", "%#{terms}%")
+        end
+    end
 end
