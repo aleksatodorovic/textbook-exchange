@@ -36,10 +36,8 @@
     <a href="/register">Register</a>
     <a href="/login">Login</a>
   <% end %>
-   <%= form_tag(search_books_path, :method => "get", id: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search Title" %>
-    <%= submit_tag "Search", :name => nil %>
-<% end %>
+   
+
   
 
 
