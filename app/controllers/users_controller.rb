@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     end
 	
 	def profile
-	    @user = User.newS
+	    @user = User.new
 	end
 	
 	def show 
