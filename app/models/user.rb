@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base 
-    #attr_accessible :name, :password
     attr_accessor :password
     has_many :book
     validates :name,  presence: true, uniqueness: true

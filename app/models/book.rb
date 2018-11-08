@@ -6,7 +6,9 @@ class Book < ActiveRecord::Base
     
     def self.search(terms)
         if terms
-            where("email ILIKE ?", "%#{terms}%")
+            where("title LIKE ?", "%#{terms}%")
+        else 
+            all
         end
     end
 end

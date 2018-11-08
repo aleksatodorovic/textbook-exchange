@@ -1,9 +1,8 @@
 class UsersController < ApplicationController
+    
     def uindex
 		@users = User.all
     end
-    
-    
     
     def register
        @users = User.new 
@@ -24,6 +23,10 @@ class UsersController < ApplicationController
             redirect_to '/register'
         end
     end
+	
+	def profile
+	    @user = User.newS
+	end
 	
 	def show 
   	    @users = User.find(params[:id]) 

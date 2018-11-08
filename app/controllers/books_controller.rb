@@ -1,10 +1,11 @@
 class BooksController < ApplicationController
     
     def index
-        @books = Book.where(["title LIKE ?","%#{params[:search]}%"])
+        @users = User.all
+        @books = Book.search(params[:search])#where(["title LIKE ?","%#{params[:search]}%"])
         @books.order(:timestamps)
         @books.reverse_order!
-        @users = User.all
+        
     end
     
     def search

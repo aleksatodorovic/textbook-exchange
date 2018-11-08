@@ -10,9 +10,11 @@ Rails.application.routes.draw do
 	get '/books/:id' => 'books#show', as: :book
   match ':controller(/:action(/:id))', :via => :get
   root 'books#index'
+  get 'index' => 'books#index'
   get 'home' => 'books#home'
   get 'new' => 'books#new'
   get 'register' => 'users#register'
+  get 'profile' => 'users#profile'
   
   get '/assets/book.jpg' => 'application#send_pic'
   get    'login'   => 'sessions#new'
