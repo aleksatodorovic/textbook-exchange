@@ -1,24 +1,13 @@
 class BooksController < ApplicationController
     
     def index
+
         @books = Book.new()
         @users = User.all
-        if params[:search]
-            @search_term = params[:search]
-            @books = Book.search_by(@search_term)
-        end
+       
     end
     
-    def search
-        @users = User.all
-        @books = Book.search(params[:search])
-	    if params[:search]
-		    @books = Book.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"])
-	    else
-		    @books = Book.all
-	    end
-	    #redirect_to '/search'
-    end
+
 
     def home 
         @books = Book.all
@@ -26,6 +15,14 @@ class BooksController < ApplicationController
         @users = User.all
         @books.reverse_order!
             
+    end
+    
+    def self.search(title)
+        if title
+            where('title LIKE ?', "%#{title}%")
+        else
+            all
+        end
     end
 
     def destroy
@@ -56,11 +53,6 @@ class BooksController < ApplicationController
     end
     
     def show
-        if params[:search]
-            @books = Book.search(params[:search]).order("created_at DESC")
-        else
-            @books = Book.all.order("created_at DESC")
-        end
         @books = Book.find(params[:id])
         
     end

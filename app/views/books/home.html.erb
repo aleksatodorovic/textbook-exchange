@@ -2,11 +2,6 @@
 <h2> Books for Sale</h2>
 
 
-<%= form_for "",url: books_path, role: "search", method: :get do %> 
-  <p>
-    <%= text_field_tag :search, @search_term, placeholder: "Search..." %>
-  </p>
-<% end %>
 
 
 <table border="1">
@@ -18,9 +13,9 @@
             <th>Phone Number</th>
 
         </tr>
-        
+        <ul id="myUL">
         <% @books.each do |x| %>
-            <tr>
+        <tr>
                 <td><%= x.title %></td>
                 <td><%= x.isbn %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
@@ -28,7 +23,30 @@
                 <% if logged_in? %>
                     <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
                 <% end %>
-            </tr>
+        </tr>
         <% end %>
+        </ul>
     </tbody>
 </table>
+
+<div class="search-box">
+ <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name">
+
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
