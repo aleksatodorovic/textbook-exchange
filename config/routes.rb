@@ -9,18 +9,24 @@ Rails.application.routes.draw do
 	get '/users/:id' => 'users#show', as: :user
 	get '/books/:id' => 'books#show', as: :book
   match ':controller(/:action(/:id))', :via => :get
-  root 'books#home'
+  root 'books#index'
+  get 'index' => 'books#index'
   get 'home' => 'books#home'
-  get 'books' => 'books#index'
+  get 'new' => 'books#new'
   get 'register' => 'users#register'
+
+  get 'profile' => 'users#profile'
   
   get '/assets/book.jpg' => 'application#send_pic'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   get 'logout'  => 'sessions#destroy'
 
+
   delete 'home/delete' => 'books#delete'
-  resources :books
+  
+
+  resources :books 
   resources :users
 
   

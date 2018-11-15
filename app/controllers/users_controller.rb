@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    
     def uindex
 		@users = User.all
     end
@@ -12,22 +13,33 @@ class UsersController < ApplicationController
     end
     
     def create 
-        @users = User.new(u_params)
+        @user = User.new(u_params)
 
-        
-        if @users.save 
+        if @user.save 
             #log_in @user
-            redirect_to '/login'
+            redirect_to '/login', :notice => "Signed up!"
         else 
             flash.now[:notice] = "Error adding user"
             redirect_to '/register'
         end
     end
 	
-	def show 
-  	@users = User.find(params[:id]) 
-  	@books = @user.books 
+	def profile
+	    @user = User.new
 	end
+	
+	def show 
+  	    @users = User.find(params[:id]) 
+  	    @books = @user.books 
+	end
+	
+	def new 
+        @user = User.new
+    end
+    
+    def phone_number=(value)
+        super(value.blank? ? nil : value.gsub(/[^\w\s]/, '')) 
+    end
 	
 	private 
     def u_params
