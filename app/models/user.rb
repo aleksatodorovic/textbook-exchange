@@ -1,24 +1,13 @@
-class User < ActiveRecord::Base 
-    attr_accessor :password
+class User < ActiveRecord::Base
     has_many :book
-    validates :name,  presence: true, uniqueness: true
-    validates :phone,  presence: true, uniqueness: true
-    validates :password,  presence: true
-    
-    def encrypt_password
-        if password.present?
-            self.password_salt = BCrypt::Engine.generate_salt
-            self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
+    def self.from_omniauth(auth)
+        where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|
+            user.provider = auth.provider
+            user.uid = auth.uid
+            user.name = auth.info.name
+            user.oauth_token = auth.credentials.token
+            user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+            user.save!
         end
     end
-  
-    def authenticate(password)
-        if self && self.password_hash == BCrypt::Engine.hash_secret(password, self.password_salt)
-            self
-        else
-            nil
-        end
-    end
-
-    
 end

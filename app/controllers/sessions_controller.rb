@@ -4,23 +4,14 @@ class SessionsController < ApplicationController
   
   
   def create
-    
-    user = User.where(:name => params[:session][:name].downcase).first
-    #user.encrypt_password
-    if user #&& user.authenticate(params[:session][:password])
-      # Log the user in and redirect to the user's show page.
-      log_in user
-      redirect_to '/home'
-    else
-      # Create an error message.
-      flash[:danger] = 'Invalid email/password combination' # Not quite right!
-      render 'new'
-    end
+    user = User.from_omniauth(env["omniauth.auth"])
+    session[:user_id] = user.id
+    redirect_to root_path
   end
 
   def destroy
-    log_out
-    redirect_to root_url
+    session[:user_id] = nil
+    redirect_to root_path
   end
   
 end
