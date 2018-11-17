@@ -1,52 +1,18 @@
 
-<h2> Novels for Sale</h2>
+<% if logged_in? %>
+    <h1> Hello <%= current_user.name %></h1>
+<% else %>
+    <h1>Welcome. Please log in</h1>
 
+    <title>Google Auth Example App</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
 
-
-
-<table border="1">
-    <tbody>
-        <tr>
-            <th>Title</th>
-            <th>ISBN</th>
-            <th>Added by</th>
-            <th>Phone Number</th>
-
-        </tr>
-        <ul id="myUL">
-        <% @books.each do |x| %>
-        <tr>
-                <td><%= x.title %></td>
-                <td><%= x.isbn %></td>
-                <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
-                <td><%= @users.find_by_id(x.user).phone unless @users.find_by_id(x.user).nil?%></td>
-                <% if logged_in? %>
-                    <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-                <% end %>
-        </tr>
-        <% end %>
-        </ul>
-    </tbody>
-</table>
-
-<div class="search-box">
- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name">
-
-</div>
-
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
+    <% if current_user %>
+      Signed in as <strong><%= current_user.name %></strong>!
+      <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    <% else %>
+        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+    <% end %>
+<% end %>

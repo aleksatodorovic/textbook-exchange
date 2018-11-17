@@ -10,7 +10,8 @@
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-4">A Novel Marketplace</h1>
-      <p class="lead">A marketplace devoted to books</p>
+      <p class="lead">a marketplace devoted to books</p>
+
     </div>
   </div>
 
@@ -22,25 +23,24 @@
   
 
 <div class="topnav">
-  <a href="/home" class="active">Our Books</a>
+  <a href="/home" class="active">Home</a>
 
  
  
 
   <% if logged_in? %>
     <a href="/users">Our Users</a>
+    <a href="/index">Our Books</a>
     <a href="/new">Add a Book</a>
     <a href="/profile">Account</a>
     <a href="/logout">Log Out</a>
   <% else %>
-    <a href="/register">Register</a>
-    
-    <a href="/auth/facebook">Login</a>
+    <a href="/index">Our Books</a>
   <% end %>
+   
 
+  
 
-
-</script>
 
 </div>
 

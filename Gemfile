@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem "omniauth-google-oauth2", "~> 0.2.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails',  '~> 4.2.10'
 # Use SCSS for stylesheets
@@ -62,6 +62,7 @@ group :production do
   gem 'rails_12factor'
 end
 
+
 group :test do 
   gem 'cucumber-rails',:require=>false 
   gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions
@@ -73,3 +74,4 @@ end
 gem 'omniauth', '~> 1.6.1'
 gem 'omniauth-facebook', '~> 4.0.0'
 gem 'omniauth-oauth2', '~> 1.4.0'
+

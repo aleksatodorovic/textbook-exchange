@@ -1,29 +1,43 @@
 <h2> Books for Sale</h2>
 
-<%= form_tag books_path, :method => :get do %> 
+
+
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> 
+    <thead>
+        <tr>
+            <th colspan="2">
+                <% if logged_in? %>
+                    <a href="/new">Add a Book</a>
+                <% else %>
+                    <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+                <%end %>
+                </th>
+            <th colspan="2"><%= form_tag books_path, :method => :get do %> 
    <%= text_field_tag :search, params[:search] %>
    <%= submit_tag "Search" %>
-<% end %>
-
-
-<table border="1">
-    <tbody>
+<% end %></th>
+        </tr>
         <tr>
             <th>Title</th>
             <th>ISBN</th>
             <th>Added by</th>
-            <th>Phone Number</th>
-
+            <% if logged_in? %>
+                <th>Action</th>
+            <% end %>
         </tr>
-        
+    </thead>
+    <tbody>    
         <% @books.each do |x| %>
             <tr>
                 <td><%= x.title %></td>
                 <td><%= x.isbn %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
-                <td><%= @users.find_by_id(x.user).phone unless @users.find_by_id(x.user).nil?%></td>
                 <% if logged_in? %>
-                    <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                    <% if current_user.id == x.user_id %>
+                        <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                    <% else %>
+                        <td><%= button_to 'More info' %></td>
+                    <% end %>
                 <% end %>
             </tr>
         <% end %>

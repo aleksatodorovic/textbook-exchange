@@ -9,7 +9,6 @@
    <%= bt.label :isbn, "ISBN" %>
    <%= bt.text_field :isbn, maxlength: 13, minlength: 10, size: 30  %>
    
-   <%= bt.collection_select(:user_id, User.all, :id, :name, :include_blank => "Please select", required: true )%>
    <%= bt.submit "Add posting" %>
 
 

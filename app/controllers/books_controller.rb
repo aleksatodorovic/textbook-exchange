@@ -25,13 +25,14 @@ class BooksController < ApplicationController
     def destroy
         Book.find(params[:id]).destroy
         flash[:success] = "Book deleted"
-        redirect_to '/home'
+        redirect_to '/index'
     end
 
     def create 
         @books = Book.new(m_params)
+        @books.user = current_user
         if @books.save 
-            redirect_to '/home'
+            redirect_to '/index'
         else 
             flash.now[:notice] = "Error adding book"
             redirect_to '/books'
@@ -55,7 +56,7 @@ class BooksController < ApplicationController
     private 
     
     def m_params
-        params.require(:book).permit(:title, :isbn, :user_id)
+        params.require(:book).permit(:title, :isbn)
     end
 
     def set_auth

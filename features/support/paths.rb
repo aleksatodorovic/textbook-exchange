@@ -15,10 +15,15 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-    when "the Novel Marketplace homepage"
+      
+    when "the Novel Marketplace home page"
       '/'
-    when "the Add a Book post page"
+      
+    when "the Add a Bookpost page"
       '/books'
+    
+    
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
