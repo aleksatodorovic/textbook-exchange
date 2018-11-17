@@ -9,17 +9,13 @@ Rails.application.routes.draw do
 	get '/users/:id' => 'users#show', as: :user
 	get '/books/:id' => 'books#show', as: :book
   match ':controller(/:action(/:id))', :via => :get
-  root 'books#home'
+  root 'books#index'
+  get 'index' => 'books#index'
   get 'home' => 'books#home'
-  get 'books' => 'books#index'
+  get 'new' => 'books#new'
   get 'register' => 'users#register'
 
-  resources :books do 
-    collection do 
-      get :search
-    end
-  end
-
+  get 'profile' => 'users#profile'
   
   get '/assets/book.jpg' => 'application#send_pic'
   get    'login'   => 'sessions#new'
@@ -33,7 +29,9 @@ Rails.application.routes.draw do
   resources :books 
   resources :users
 
-  
+  get 'auth/facebook' => "sessions#create"
+  get '/signin' => 'sessions#new', :as => :signin
+  delete 'sign_out', to: "sessions#destroy", as: 'sign_out'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

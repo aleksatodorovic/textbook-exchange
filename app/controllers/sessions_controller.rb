@@ -1,26 +1,18 @@
 class SessionsController < ApplicationController
-  def new
-  end
-  
+
   
   def create
-    
-    user = User.where(:name => params[:session][:name].downcase).first
-    #user.encrypt_password
-    if user #&& user.authenticate(params[:session][:password])
-      # Log the user in and redirect to the user's show page.
-      log_in user
-      redirect_to '/home'
-    else
-      # Create an error message.
-      flash[:danger] = 'Invalid email/password combination' # Not quite right!
-      render 'new'
-    end
+      auth = request.env["omniauth.auth"]
+      session[:omniauth] = auth.except('extra')
+      user = User.sign_in_from_omniauth(auth)
+      session[:user_id] = user_id
+      redirect_to root_url, notice: "SIGNED IN"
   end
 
   def destroy
-    log_out
-    redirect_to root_url
+    session[:user_id] = nil 
+    session[:omniauth] = nil 
+    redirect_to root_url, notice: "SIGNED OUT"
   end
   
 end

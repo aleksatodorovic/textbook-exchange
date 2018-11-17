@@ -34,7 +34,7 @@ gem 'puma'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'devise'
+gem 'devise', '~> 4.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -61,3 +61,15 @@ group :production do
   gem 'pg', '~> 0.18'
   gem 'rails_12factor'
 end
+
+group :test do 
+  gem 'cucumber-rails',:require=>false 
+  gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions
+  gem 'database_cleaner' # to clear Cucumber's test database between runs 
+  gem 'capybara' # lets Cucumber pretend to be a web browser
+  gem 'launchy' # a useful debugging aid for user stories 
+end 
+
+gem 'omniauth', '~> 1.6.1'
+gem 'omniauth-facebook', '~> 4.0.0'
+gem 'omniauth-oauth2', '~> 1.4.0'
