@@ -7,7 +7,7 @@ class BooksController < ApplicationController
     end
     
     def home 
-        @books = Book.all
+        @books = Book.all()
         @books.order(:timestamps)
         @users = User.all
         @books.reverse_order!

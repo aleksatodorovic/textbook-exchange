@@ -16,11 +16,19 @@
 #Book.create(:title => "all quiet on the western front")
 =begin
 u1 = User.create(name: "Shrek", password: "Shreksplace", phone: "555-5555")
-Book.create(title: "Swamp Living for Dummies", isbn: "9999999999", user_id: u1.id)
-Book.create(title: "The Ogre Scouts Handbook", isbn: "0000000000", user_id: u1.id)
+Book.create(title: "Swamp Living for Dummies", isbn: "9999999999", price: "10", user_id: u1.id)
+Book.create(title: "The Ogre Scouts Handbook", isbn: "0000000000", price: "10", user_id: u1.id)
 
 u2 = User.create(name: "Dr. Kurdia", password: "Shrek", phone: "011-0011")
-Book.create(title: "Shrek the transcript of the movie", isbn: "?????????", user_id: u2.id)
-Book.create(title: "Shrek 2 the transcript of the movie", isbn: "?????????", user_id: u2.id)
+Book.create(title: "Shrek the transcript of the movie", isbn: "?????????", price: "10", user_id: u2.id)
+Book.create(title: "Shrek 2 the transcript of the movie", isbn: "?????????", price: "10", user_id: u2.id)
 puts "done"
 =end
+u1 = User.create(name: "Shrek")
+Book.create(price: "10", title: "Swamp Living for Dummies", isbn: "9999999999",  user_id: u1.id)
+Book.create(price: "10", title: "The Ogre Scouts Handbook", isbn: "0000000000", user_id: u1.id)
+
+u2 = User.create(name: "Dr. Kurdia")
+Book.create(price: "10", title: "Shrek the transcript of the movie", isbn: "?????????", user_id: u2.id)
+Book.create(price: "10", title: "Shrek 2 the transcript of the movie", isbn: "?????????", user_id: u2.id)
+puts "done"

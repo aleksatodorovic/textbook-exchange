@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20181013154504) do
 
   create_table "books", force: :cascade do |t|
+    t.text     "price"
     t.text     "title"
     t.text     "isbn"
     t.integer  "user_id"

@@ -73,5 +73,6 @@ end
 
 gem 'omniauth', '~> 1.6.1'
 gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-oauth2', '~> 1.4.0'
+gem 'omniauth-oauth2', '~> 1.3.1'
+#gem 'omniauth-oauth2', '~> 1.4.0'
 
