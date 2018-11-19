@@ -20,6 +20,7 @@
         <tr>
             <th>Title</th>
             <th>ISBN</th>
+            <th>Price</th>
             <th>Added by</th>
             <% if logged_in? %>
                 <th>Action</th>
@@ -31,6 +32,7 @@
             <tr>
                 <td><%= x.title %></td>
                 <td><%= x.isbn %></td>
+                <td><%= x.price %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
                 <% if logged_in? %>
                     <% if current_user.id == x.user_id %>

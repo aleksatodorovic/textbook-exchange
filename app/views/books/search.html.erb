@@ -5,6 +5,7 @@
         <tr>
             <th>Title</th>
             <th>ISBN</th>
+            <th>Price</th>
             <th>Added by</th>
             <th>Phone Number</th>
 
@@ -14,6 +15,7 @@
             <tr>
                 <td><%= x.title %></td>
                 <td><%= x.isbn %></td>
+                <td><%= x.price %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
                 <td><%= @users.find_by_id(x.user).phone unless @users.find_by_id(x.user).nil?%></td>
                 <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>

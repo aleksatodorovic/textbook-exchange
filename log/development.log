@@ -10111,3 +10111,2352 @@ Cannot render console from 129.81.39.107! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/auth/facebook" for 129.81.39.107 at 2018-11-14 01:18:00 +0000
 Cannot render console from 129.81.39.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 70.172.234.254 at 2018-11-17 19:52:30 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (8945.2ms)
+Completed 200 OK in 9008ms (Views: 8976.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-5cdd4174759837f01a9ad6d77c8d77c3a3e3d12376444634dd1a3f2b2381742b.css?body=1" for 70.172.234.254 at 2018-11-17 19:52:40 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for 70.172.234.254 at 2018-11-17 19:52:40 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 70.172.234.254 at 2018-11-17 19:52:40 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/google_oauth2" for 70.172.234.254 at 2018-11-17 19:52:44 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 70.172.234.254 at 2018-11-17 19:52:44 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 70.172.234.254 at 2018-11-17 19:52:58 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 70.172.234.254 at 2018-11-17 19:52:59 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+  [1m[36m (20.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (15.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBooks (20180926202114)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/ubuntu/workspace/db/migrate/20180926202114_create_books.rb:10)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180926202114"]]
+  [1m[35m (14.3ms)[0m  commit transaction
+Migrating to CreateUsers (20181013154504)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181013154504"]]
+  [1m[35m (15.5ms)[0m  commit transaction
+Migrating to AddOmniauthToUsers (20181114010052)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "provider" varchar
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/auth/google_oauth2" for 70.172.234.254 at 2018-11-17 20:19:59 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 70.172.234.254 at 2018-11-17 20:19:59 +0000
+Cannot render console from 70.172.234.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddOmniauthToUsers (20181114010052)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 22:42:07 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (136.2ms)
+Completed 200 OK in 185ms (Views: 172.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 22:42:09 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 22:42:09 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 22:54:32 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-17 22:54:33 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 22:54:41 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 22:54:42 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 22:58:21 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (91.3ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 22:58:24 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 22:58:25 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 22:58:29 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-17 22:58:32 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:04:44 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (63.2ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-17 23:04:47 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:23:46 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:23:47 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:23:48 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:34:29 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:34:31 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:34:31 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:35:08 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (637.7ms)
+Completed 200 OK in 746ms (Views: 710.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:35:11 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:35:11 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:37:25 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (57.8ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:37:27 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:37:27 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=b1dab24ab923af5345a11407882dba2de37c1929b6ad2299&code=4/mQDfVZmlHNtIM0v5MejBfOFZxSXMBS6I7_MJRfA7VurZyskPc2f49jpYizlcwUhkn5i6OlU3pEYWp4azQMtNYwo&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-17 23:37:27 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b1dab24ab923af5345a11407882dba2de37c1929b6ad2299&code=4/mQDfVZmlHNtIM0v5MejBfOFZxSXMBS6I7_MJRfA7VurZyskPc2f49jpYizlcwUhkn5i6OlU3pEYWp4azQMtNYwo&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-17 23:38:17 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b1dab24ab923af5345a11407882dba2de37c1929b6ad2299&code=4/mQDfVZmlHNtIM0v5MejBfOFZxSXMBS6I7_MJRfA7VurZyskPc2f49jpYizlcwUhkn5i6OlU3pEYWp4azQMtNYwo&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-17 23:38:20 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:42:54 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (530.7ms)
+Completed 200 OK in 641ms (Views: 605.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:42:57 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:42:57 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=225484e6a0d6b187821a8f1d223cc3834c350acccc1d7f8c&code=4/mQBYRDB3SagkMU-g0dgZbFOwnqbUpsGW2isdC7nM6R8S4gDc86nZZjRN5-RLi57xUR6NOIJjktRidF3D7XKtA8I&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-17 23:42:57 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+  [1m[36m (19.5ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (18.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (20.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (12.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (14.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (15.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36m (17.9ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (18.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (19.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (18.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (18.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (15.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (15.8ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (15.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (18.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (16.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (15.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36m (15.3ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (17.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (19.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (16.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (12.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (14.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:49:33 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (12.6ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (19.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (20.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (16.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (15.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36m (18.0ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (16.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (17.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (16.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (16.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (19.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:54:40 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (503.8ms)
+Completed 200 OK in 594ms (Views: 568.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:54:42 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:54:43 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=c15766f8433b39f4e51394d1fe68ca215afe7108974c267c&code=4/mQCqazygmxSWy0-9gBz7LsdTVepXLKpFee6uDoMwjJKVRtpPbB4CD6jE_jgy1xYVdLV-L4AjwFFIARqJDWAoids&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-17 23:54:43 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/auth/google_oauth2/callback?state=c15766f8433b39f4e51394d1fe68ca215afe7108974c267c&code=4/mQCqazygmxSWy0-9gBz7LsdTVepXLKpFee6uDoMwjJKVRtpPbB4CD6jE_jgy1xYVdLV-L4AjwFFIARqJDWAoids&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-17 23:55:05 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.0ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:55:09 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:55:09 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=6e3e64781cdd8f21886846ebd03462076abcfa7a9110bd6e&code=4/mQAlRDCgz3A-Fgaw9gxLNfF-ZXXUD53l0HraONwm9jGS3kH121FZTZA5pAoW9Ls1Xk1gL7sYb4Xii6teabYr14A&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-17 23:55:09 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.9ms)
+  [1m[36m (17.3ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (15.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (16.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (14.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (14.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (13.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36m (15.1ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "isbn" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (15.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (15.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (16.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20181013154504')[0m
+  [1m[35m (15.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180926202114')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:56:37 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (506.7ms)
+Completed 200 OK in 608ms (Views: 580.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:56:40 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:56:40 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=6d8c18521803549a6b15791650136cc31f280f06936cb6bf&code=4/mQAHqQ3Y7iy7qPPu7UhpwEw91eGLd2z4YU9mk5kV5NlCtcHinUo0JnQFLxMlshLFs0AhKU4V8WXFK7xOTy0nmY0&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-17 23:56:41 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-17 23:57:22 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 72ms (Views: 65.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:57:25 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-17 23:57:25 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=9fd4b0f6c473a0e7edae7693f58031302ff52de9def5aaa8&code=4/mQDxwHwaVWYQ7uYtAh91E0SVwxO8AepFKBI5fZkTuQlniJJP-aQTQ7Wqup0tI4eb-JzApAsDn6FhaSp3zN4fD_E&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-17 23:57:26 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.7ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 00:03:33 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (488.2ms)
+Completed 200 OK in 582ms (Views: 555.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 00:03:35 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 00:03:36 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=650e8f0b11047175e305a3e5a5a8629ed864c7e8986874b3&code=4/mQAs6hmy7hgWUsEiU5sOv-UZYrCbUipkeeqqjoCI4iAMCCe7i6kbNa-Q5Q9pog1YcYYOkgfU5bBe9U8zwYq5318&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-18 00:03:36 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.5ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 00:08:57 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (525.7ms)
+Completed 200 OK in 624ms (Views: 595.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 00:09:00 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 00:09:00 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=3f0d5c4c3dafb1c39664d4e041a83190704c9844b00a31cb&code=4/mQBccn0ertkLb61-25gcvGgUNVFWzMfhXESaMNsKTP70KNVYTTf3k-b6syS3lFa71en6EYtYJDfrPcPNfAE5KVo&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-18 00:09:00 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.2ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=3f0d5c4c3dafb1c39664d4e041a83190704c9844b00a31cb&code=4/mQBccn0ertkLb61-25gcvGgUNVFWzMfhXESaMNsKTP70KNVYTTf3k-b6syS3lFa71en6EYtYJDfrPcPNfAE5KVo&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-18 00:09:08 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 00:23:49 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (508.8ms)
+Completed 200 OK in 601ms (Views: 573.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 00:23:52 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 00:23:52 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=13fe6fbda33f022ec753e20cc72ea5c13b753fde523090d4&code=4/mQAocn9i3v0-BzJKSVI9_rcKIEwbca9VFVo5njL5NKT_02LL6f2tUtTBHRuUdrvgoc5o4G0LpwjQJ55JMR3Vpr8&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-18 00:23:52 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.6ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 19:29:14 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (775.0ms)
+Completed 200 OK in 882ms (Views: 849.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 19:29:18 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 19:29:18 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=af1d50379efd0f6473ecaeffb12f040e3626301b0c9fc1de&code=4/mQDErxJiWKImYJ91V67gsWFfqx_Bz9F5P6Y0ochlisk_zN3yJzeBHwRn878vQNw8CBsNwtSvhWt_r5lo-aA_f_w&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-18 19:29:19 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.3ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 19:35:39 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (498.6ms)
+Completed 200 OK in 591ms (Views: 565.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 19:36:05 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 19:36:05 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=11b2151572460cac496e703a18fdb9954c21212cf851f787&code=4/mQAXsV9cHmCx45CG64ZQC80MzkEtJuzDuYGY01RczcLbE419WXsizwKx7Vzw7o2YcfdOX-J0xv7rnRaLxkRwE18&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-18 19:36:05 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.6ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 22:00:29 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (572.9ms)
+Completed 200 OK in 680ms (Views: 648.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:00:33 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:00:33 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=07444f3a9cc2ed4c3ded2fa0c65d62a7d6ab6d78abe553bc&code=4/mgDQit_iLuOC34VZvjM2s2lOFgjVOV9-oCcXZLdA_p90ztW6kJW5hCtx6-wE65ftBg0fwZvxmN5Ye6_Yei3eX3E&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-18 22:00:33 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.7ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 22:01:04 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (492.0ms)
+Completed 200 OK in 586ms (Views: 558.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:01:07 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:01:07 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=e8cdc5af7aaf0cdc08f0e589c35ae084d6f03b12a9ffc3ef&code=4/mgC7VFaMi5yZDBIb3qLtZ4vZcr_jlZu1nyFirzZYrODWEnW56-PXZsWI-TzsL98yZlxKy_nyyntdpoCIWoBL-Xc&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-18 22:01:08 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.5ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 22:01:45 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:01:48 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:01:48 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=ae8e72070f08be4449489c6dee5a0bec2ab8a58e10f22f69&code=4/mgDtZLUuu-V5nMmQ2JG4WVMWJGVRLXuVHeFml5mpfAhin4m7k7IWCTFly5SlT7b04GKWuhUmf8IpQUxduP0Foac&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-18 22:01:48 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 22:03:21 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (67.3ms)
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:03:23 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 22:07:49 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:07:51 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 22:08:07 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (47.8ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:08:09 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-18 22:18:52 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (64.7ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:18:55 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:20:08 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:20:10 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:20:12 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-18 22:20:13 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:20:16 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-18 22:20:16 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=5547d1842b17885660cfb8fc68daa2f8846c2c80c78fe96f&code=4/mgC_ptnZtCFfTyOIsqWzre1eVw0gJ43KiNfTbJU2Bc5riPmu0aT8HKsAA1fdW8soAZD9jljfQDP1tBY7DPatDts&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-18 22:20:16 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.4ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-19 02:29:33 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (656.4ms)
+Completed 200 OK in 761ms (Views: 728.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-19 02:29:37 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-19 02:29:37 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=59b92263a00a5d32adecf746f005d2049441d9e4b8834e08&code=4/mgDADRISZ5Wq7eb2R-JzHqbe03wAH0AWX84WABiIqfVIWtuVGkFwVfcoKDuqnPXmk34QJfTf_vwhCO9-uHTHrxo&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 174.69.127.109 at 2018-11-19 02:29:37 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.5ms)
+
+
+Started GET "/" for 174.69.127.109 at 2018-11-19 04:32:57 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (467.6ms)
+Completed 200 OK in 556ms (Views: 530.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-19 04:33:00 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 174.69.127.109 at 2018-11-19 04:33:01 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=bfe0d5c7cb518ce4a8af509e9b9c21c7e63c0bf3c92afcf8&code=4/mgBTi0f3sIlkIi-u0GK-yDwzp-A-H9lSMCQQH_haVPwaU_nVqtTryD0f1zjwEZpC4qyuT8OeuPanQFMt_UpiF1s&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile" for 174.69.127.109 at 2018-11-19 04:33:01 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+(google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}
+
+OAuth2::Error (redirect_uri_mismatch: Bad Request
+{
+  "error": "redirect_uri_mismatch",
+  "error_description": "Bad Request"
+}):
+  oauth2 (1.4.1) lib/oauth2/client.rb:119:in `request'
+  oauth2 (1.4.1) lib/oauth2/client.rb:146:in `get_token'
+  oauth2 (1.4.1) lib/oauth2/strategy/auth_code.rb:30:in `get_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:89:in `build_access_token'
+  omniauth-google-oauth2 (0.2.8) lib/omniauth/strategies/google_oauth2.rb:103:in `custom_build_access_token'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.11) lib/rack/etag.rb:24:in `call'
+  rack (1.6.11) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.11) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.11) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.0ms)
+
+
+Started GET "/index" for 174.69.127.109 at 2018-11-19 04:35:22 +0000
+Cannot render console from 174.69.127.109! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.5ms)
