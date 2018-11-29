@@ -2,8 +2,10 @@ class BooksController < ApplicationController
     before_action :set_auth
     
     def index
-        @books = Book.all()
         @users = User.all
+        @books = Book.search(params[:search])
+        @books.order(:timestamps)
+        @books.reverse_order! 
     end
     
     def home 
@@ -14,12 +16,15 @@ class BooksController < ApplicationController
             
     end
     
-    def self.search(title)
-        if title
-            where('title LIKE ?', "%#{title}%")
+    def search
+        @users = User.all 
+        @books = Book.search(params[:search])
+        if params[:search]
+            @books = Book.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"])
         else
-            all
+            @books = Book.all
         end
+        #redirect_to '/search'
     end
 
     def destroy
