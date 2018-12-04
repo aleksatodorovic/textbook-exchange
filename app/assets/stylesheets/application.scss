@@ -14,7 +14,8 @@
  @import "bootstrap";
  
  body {
-    background-color: #ffffff;
+    background-color: 	#F3FFFF;
+    // background-image: image-url("https://i2.wp.com/wptavern.com/wp-content/uploads/2015/02/library.png?fit=1024%2C499&ssl=1");
     text-align: center;
 
 }
@@ -47,7 +48,10 @@
 
 div.jumbotron {
     background-image: image-url("book.jpg");
-    background-repeat: no-repeat;
+    background-size:cover; 
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    height:100%;
     text-align:left;
     display: block;
     margin-left: auto;

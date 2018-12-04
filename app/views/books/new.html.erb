@@ -3,14 +3,14 @@
 <%# Comment %>
 
 <%= form_for @books do |bt| %>
-   <%= bt.label :title, "Title" %>
-   <%= bt.text_field :title %>
+   <%= bt.label :title, "Title: " %>
+   <%= bt.text_field :title, placeholder: "Great Expectations", required: true %>
    
-   <%= bt.label :isbn, "ISBN" %>
-   <%= bt.text_field :isbn, maxlength: 13, minlength: 10, size: 30  %>
+   <%= bt.label :isbn, "ISBN: " %>
+   <%= bt.text_field :isbn, :maxlength => 13, :minlength => 10, placeholder: "9780141439563", required: true%>
    
-   <%= bt.label :price, "Indicate the Price" %>
-   <%= bt.text_field :price %>
+   <%= bt.label :price, "Indicate the Price: $" %>
+   <%= bt.number_field :price, :min => 0, :step => 0.01, placeholder: "20.43", required: true %>
    
    <%= bt.submit "Add posting" %>
 
