@@ -33,7 +33,7 @@ class UsersController < ApplicationController
   	    @books = @user.books 
 	end
 	
-	def new 
+    def new 
         @user = User.new
     end
     

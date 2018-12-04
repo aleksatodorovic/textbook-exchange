@@ -4,7 +4,6 @@ class CreateBooks < ActiveRecord::Migration #[5.1]
       t.text :price
       t.text :title
       t.text :isbn
-      #t.text :author
 
       t.references :user
       t.timestamps 
