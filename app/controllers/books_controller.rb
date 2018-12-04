@@ -36,6 +36,7 @@ class BooksController < ApplicationController
     def create 
         @books = Book.new(m_params)
         @books.user = current_user
+        
         if @books.save 
             redirect_to '/index'
         else 
