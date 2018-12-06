@@ -7,10 +7,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <div class="jumbotron">
-      <div class="container">
+      <table>
+        <tr>
+          <td><%= link_to image_tag("logos/logo.png", height: '125x'), "/home" %></td>
+      <td>
+        <div class="container">
         <h1 class="display-4">A Novel Marketplace</h1>
         <p class="lead">a marketplace devoted to books</p>
       </div>
+      </td>
+      </tr>
+      </table>
     </div>
   </head>
   <body>
