@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="google-site-verification" content="IsytPotOlAOtdzg9p97p8e-oVuixcqSsRZoyDECPNNk" />
-  <title>Textbook Exchange</title>
-  <%= stylesheet_link_tag 'application' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-4">A Novel Marketplace</h1>
-      <p class="lead">a marketplace devoted to books</p>
-
+  <head>
+    <meta name="google-site-verification" content="IsytPotOlAOtdzg9p97p8e-oVuixcqSsRZoyDECPNNk" />
+    <title>Textbook Exchange</title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">A Novel Marketplace</h1>
+        <p class="lead">a marketplace devoted to books</p>
+      </div>
     </div>
-  </div>
-
-
-
-
-</head>
-<body>
-  
-
-<div class="topnav">
-  <a href="/home" class="active">Home</a>
-
- 
- 
-
-  <% if logged_in? %>
-    <a href="/users">Our Users</a>
-    <a href="/index">Our Books</a>
-    <a href="/new">Add a Book</a>
-    <a href="/profile">Account</a>
-    <a href="/logout">Log Out</a>
-  <% else %>
-    <a href="/index">Our Books</a>
-  <% end %>
-   
-
-  
-
-
-</div>
-
-
-
-
-<div class="container">
-  <%= yield %>
-</div>
-
-
-
-
-
-</body>
-
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/home" class="active">Home</a>
+      <% if logged_in? %>
+        <a href="/users">Our Users</a>
+        <a href="/index">Our Books</a>
+        <a href="/new">Add a Book</a>
+        <a href="/profile">Account</a>
+        <a href="/logout">Log Out</a>
+      <% else %>
+        <a href="/index">Our Books</a>
+      <% end %>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <div class="footer"> 
+      <div class="page-footer">
+        <p>Novel Marketplace © 2018</p>
+      </div>
+    </div>
+  </body>
 </html>
