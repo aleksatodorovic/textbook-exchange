@@ -74,5 +74,7 @@ end
 gem 'omniauth', '~> 1.6.1'
 gem 'omniauth-facebook', '~> 4.0.0'
 gem 'omniauth-oauth2', '~> 1.3.1'
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 4.3'
 #gem 'omniauth-oauth2', '~> 1.4.0'
 

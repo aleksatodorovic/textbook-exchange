@@ -1,10 +1,12 @@
 class Book < ActiveRecord::Base 
     belongs_to :user
-
+    
+    mount_uploader :image, ImageUploader
     validates :title,  presence: true
     validates :isbn,  presence: true, :numericality => {:only_integer => true}
     validates :price, presence: true
     validates_presence_of :user
+    
     
     def self.search(terms)
         if terms

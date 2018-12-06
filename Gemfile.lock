@@ -58,6 +58,11 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.2)
       xpath (~> 3.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -130,6 +135,7 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
+    mini_magick (4.9.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -257,6 +263,7 @@ DEPENDENCIES
   bootstrap
   byebug
   capybara
+  carrierwave (~> 0.10.0)
   coffee-rails (~> 4.1.0)
   cucumber-rails
   cucumber-rails-training-wheels
@@ -266,6 +273,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  mini_magick (~> 4.3)
   omniauth (~> 1.6.1)
   omniauth-facebook (~> 4.0.0)
   omniauth-google-oauth2 (~> 0.2.1)
