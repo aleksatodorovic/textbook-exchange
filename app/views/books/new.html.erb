@@ -1,21 +1,33 @@
 <h2>Add a Book</h2>
 
-<%# Comment %>
-
+<form class= "form">
 <%= form_for @books do |bt| %>
-   <%= bt.label :title, "Title: " %>
-   <%= bt.text_field :title, placeholder: "Great Expectations", required: true %>
+   <div class= "form-group">
+      <%= bt.label :title, "Title: " %>
+      <%= bt.text_field :title, placeholder: "Great Expectations", required: true, class: "form-control" %>
+   </div>
    
-   <%= bt.label :isbn, "ISBN: " %>
-   <%= bt.text_field :isbn, :maxlength => 13, :minlength => 10, placeholder: "9780141439563", required: true%>
+   <div class= "form-group">
+      <%= bt.label :isbn, "ISBN: " %>
+      <%= bt.text_field :isbn, :maxlength => 13, :minlength => 10, placeholder: "9780141439563", required: true, class: "form-control" %>
+   </div>
    
-   <%= bt.label :price, "Indicate the Price: $" %>
-   <%= bt.number_field :price, :min => 0, :step => 0.01, placeholder: "20.43", required: true %>
+   <div class= "form-group">
+      <%= bt.label :price, "Indicate the Price (in USD $):" %>
+      <%= bt.number_field :price, :min => 0, :step => 0.01, placeholder: "20.43", required: true, class: "form-control" %>
+   </div>
    
-   <%= bt.submit "Add posting" %>
-
+   <div class="form-group">
+      <%= bt.label :picture, "Upload an Image of Your Book: " %>
+      <%= bt.file_field :picture, class: "form-control" %>
+   </div>
+   
+   <div class= "actions">
+      <%= bt.submit "Add posting", class: "btn btn-primary" %>
+   </div>
 
 <% end %>
+</form>
 
 <br>
-<a href="/index">Our Books</a>
+<%# a href="/index">Our Books %>

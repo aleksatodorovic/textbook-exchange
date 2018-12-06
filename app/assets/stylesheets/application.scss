@@ -19,6 +19,13 @@
     text-align: center;
 
 }
+form {
+    text-align: left;
+}
+
+h2 {
+    padding: 16px;
+}
 
 /* Add a  background color to the top navigation */
 .topnav {
@@ -78,7 +85,6 @@ div.jumbotron {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
     color: white;
     text-align: center;
 }

@@ -11,10 +11,18 @@
                     <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
                 <%end %>
                 </th>
-            <th colspan="2"><%= form_tag books_path, :method => :get do %> 
-   <%= text_field_tag :search, params[:search] %>
-   <%= submit_tag "Search" %>
-<% end %></th>
+            <th colspan="2">
+                <form class="pull-right">
+                    <div class="input-group">
+                        <%= form_tag books_path, :method => :get do %> 
+                            <%= text_field_tag :search, params[:search], placeholder: "Search Books", class: 'form-control' %>
+                            <span class="input-group-btn">
+                               <%= submit_tag "Search", class: 'btn btn-default' %>
+                            </span>
+                        <% end %>
+                    </div>
+                </form>
+            </th>
         </tr>
         <tr>
             <th>Title</th>
