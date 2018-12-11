@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   
 	get '/users' => 'users#uindex'
 	get '/users/:id' => 'users#show', as: :user
-	get '/books/:id' => 'books#show', as: :book
+	get '/index/:id' => 'books#show', as: :book
+	#get '/books/:id' => 'books#show', as: :book
   root 'books#home'
   get 'index' => 'books#index'
   get 'home' => 'books#home'
@@ -22,7 +23,7 @@ Rails.application.routes.draw do
   get 'logout'  => 'sessions#destroy'
 
   
-  get 'index/:id' , to:'books#show', as: :show
+  
     
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')

@@ -37,7 +37,7 @@
     <tbody>    
         <% @books.each do |x| %>
             <tr>
-                <td><%= x.title %></td>
+                <td><%= link_to x.title %></td>
                 <td><%= x.isbn %></td>
                 <td><%= "$" + x.price %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
@@ -46,7 +46,7 @@
                         <td><button onclick="alert('Are you sure?')"><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></button></td>
  
                     <% else %>
-                        <td><%= button_to 'More info', book_path(x) %></td>
+                        <td><%= button_to 'More info', book_path(x), method: :get %></td>
                     <% end %>
                 <% end %>
             </tr>
