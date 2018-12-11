@@ -78,3 +78,7 @@ gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 #gem 'omniauth-oauth2', '~> 1.4.0'
 
+gem 'jquery-turbolinks'
+gem 'jquery-datatables-rails', '~> 3.4.0'
+gem 'will_paginate', '~> 3.1.0'
+
