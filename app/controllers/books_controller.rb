@@ -42,7 +42,7 @@ class BooksController < ApplicationController
         else 
             flash.now[:notice] = "Error adding book"
             #render :action => "new"
-            redirect_to '/index'
+            redirect_to '/new'
         end
         
     end
