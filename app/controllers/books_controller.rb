@@ -26,6 +26,10 @@ class BooksController < ApplicationController
         end
         #redirect_to '/search'
     end
+    
+    def account
+        @books = Book.find(params[:id])
+    end
 
     def destroy
         Book.find(params[:id]).destroy
@@ -62,7 +66,7 @@ class BooksController < ApplicationController
     private 
     
     def m_params
-        params.require(:book).permit(:title, :isbn, :price)
+        params.require(:book).permit(:title, :isbn, :price, :description, :condition, :subject)
 
     end
 
