@@ -23,7 +23,7 @@
          <div class="form-group">
             <%= bt.label :image, "Upload a Photo of the Book: ", class: "col-md-4 control-label" %>
             <div class="col-md-8">
-               <%= bt.number_field :image, :min => 0, :step => 0.01, placeholder: "image.jpg", required: true, class: "form-control" %>
+               <%= bt.file_field :image, :min => 0, :step => 0.01, placeholder: "image.jpg", required: true, class: "form-control" %>
             </div>
          </div>
          <%= bt.submit "Add posting", class: "btn btn-primary" %>
