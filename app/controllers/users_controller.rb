@@ -25,7 +25,8 @@ class UsersController < ApplicationController
     end
 	
 	def profile
-	    @user = User.new
+	    @users = User.includes(:books)
+	    @books = Book.where(:id => current_user.id)
 	end
 	
 	def show 
