@@ -17,7 +17,17 @@
     background-color: 	#F3FFFF;
     // background-image: image-url("https://i2.wp.com/wptavern.com/wp-content/uploads/2015/02/library.png?fit=1024%2C499&ssl=1");
     text-align: center;
+    min-height: 400px;
+   margin-bottom: 100px;
+   clear: both;
 
+}
+form {
+    text-align: left;
+}
+
+h2 {
+    padding: 16px;
 }
 
 /* Add a  background color to the top navigation */
@@ -78,7 +88,6 @@ div.jumbotron {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
     color: white;
     text-align: center;
 }

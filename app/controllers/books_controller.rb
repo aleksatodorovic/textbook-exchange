@@ -35,13 +35,14 @@ class BooksController < ApplicationController
 
     def create 
         @books = Book.new(m_params)
-        @books.user_id = current_user.id if current_user
+        @books.user = current_user
         
         if @books.save 
             redirect_to '/index'
         else 
             flash.now[:notice] = "Error adding book"
-            redirect_to '/books'
+            #render :action => "new"
+            redirect_to '/index'
         end
         
     end
