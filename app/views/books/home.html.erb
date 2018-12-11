@@ -1,18 +1,21 @@
-
-<% if logged_in? %>
-    <h2> Hello <%= current_user.name %></h2>
-<% else %>
-    <h2>Welcome. Please log in</h2>
-
-    <title>Google Auth Example App</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-
-    <% if current_user %>
-      Signed in as <strong><% current_user.name %></strong>!
-      <%= link_to "Sign out", signout_path, id: "sign_out", class: "btn btn-primary" %>
+<div class="spaceitout">
+<div id="better">
+    <% if logged_in? %>
+        <h2> Hello <%= current_user.name %></h2>
     <% else %>
-        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "btn btn-primary" %>
+        <h2>Welcome. Please log in</h2>
+    
+        <title>Google Auth Example App</title>
+        <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+        <%= csrf_meta_tags %>
+    
+        <% if current_user %>
+          Signed in as <strong><% current_user.name %></strong>!
+          <%= link_to "Sign out", signout_path, id: "sign_out", class: "btn btn-primary" %>
+        <% else %>
+            <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "btn btn-primary" %>
+        <% end %>
     <% end %>
-<% end %>
+</div>
+</div>
