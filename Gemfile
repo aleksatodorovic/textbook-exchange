@@ -76,3 +76,7 @@ gem 'omniauth-facebook', '~> 4.0.0'
 gem 'omniauth-oauth2', '~> 1.3.1'
 #gem 'omniauth-oauth2', '~> 1.4.0'
 
+gem 'jquery-turbolinks'
+gem 'jquery-datatables-rails', '~> 3.4.0'
+gem 'will_paginate', '~> 3.1.0'
+
