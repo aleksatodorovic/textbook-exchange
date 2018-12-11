@@ -11,17 +11,32 @@
  * file per style scope.
  *
  */
+
  @import "bootstrap";
  
  body {
-    background-color: 	#F3FFFF;
-    // background-image: image-url("https://i2.wp.com/wptavern.com/wp-content/uploads/2015/02/library.png?fit=1024%2C499&ssl=1");
+    background-color: 	#ffffff;
+    background-image: image-url("bodybooks.jpg");
+    background-size:cover; 
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     text-align: center;
     min-height: 400px;
    margin-bottom: 100px;
    clear: both;
 
 }
+
+#better {
+    background-color: #ffffff;
+    padding: 14px 16px;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px;
+    padding: 20px; 
+}
+
+
 form {
     text-align: left;
 }
@@ -48,13 +63,14 @@ h2 {
     border-bottom: 3px solid transparent;
 }
 
+div.spaceitout {
+    padding: 25px 0px;
+}
+
 .topnav a:hover {
     border-bottom: 3px solid blue;
 }
 
-.topnav a.active {
-    border-bottom: 3px solid blue;
-}
 
 div.jumbotron {
     background-image: image-url("book.jpg");
@@ -81,6 +97,7 @@ div.jumbotron {
     vertical-align: middle;
 
 }
+
 
 
 .footer {
