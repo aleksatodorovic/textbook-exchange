@@ -3,7 +3,7 @@ class BooksController < ApplicationController
     
     def index
         @users = User.all
-        @books = Book.paginate(:page => params[:page], :per_page => 10)
+        @books = Book.search(params[:search]).paginate(:page => params[:page], :per_page => 10)
         @books.order(:timestamps)
         @books.reverse_order! 
     end
