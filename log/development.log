@@ -21468,3 +21468,674 @@ Processing by BooksController#index as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
   Rendered books/index.html.erb within layouts/application (11.3ms)
 Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 129.81.123.81 at 2018-12-11 03:15:37 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered books/home.html.erb within layouts/application (39.6ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 2.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  app/controllers/application_controller.rb:19:in `current_user'
+  app/helpers/sessions_helper.rb:11:in `logged_in?'
+  app/views/books/home.html.erb:2:in `_app_views_books_home_html_erb___4004667541377987244_23200460'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.0ms)
+
+
+Started GET "/" for 129.81.123.81 at 2018-12-11 03:16:20 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  Rendered books/home.html.erb within layouts/application (385.1ms)
+Completed 200 OK in 465ms (Views: 421.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:20 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d7eadb98f0cefa9b710993ef65565cffbac586b3b60f52f92288e5b0a3315d9b.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/util.self-32c933709f03802cab6990dadb15257dcca78c60790311303e1f69319bb5ec09.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-9c4010d9389b7b27e3247fcbb0cc4425f15d7df2d0d3464b9c3a9022632f1dc8.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-f40766e711b829f346a1d3f6ca132348a77eef7cdfd28732ba8afcf2c996dc89.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-6174a81cd2fbcf8bc9949957661638e9716cb0390e0fcf29fafcdc0f2351c58f.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-b2c5fc72d4e22d1516e9713d3ee1ffa6f92ed11722175e2a9b88c3acbe0bbc09.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-3d5b251608f27dbdae33a816e4736ae6e8a8e1729af1fc0c10eb234bf0f494c5.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-7abc7d81497e5228d193f1151e74cd9f683732d7ab3e9654f714a4d75fbd41c0.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-5e0c9bfb00dc1db87237215c889765533d8b0744d96538915cff2ac0e29a3825.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-711cfe854709180e4c826346dd982c6df3eabc0eab949d2a1560201a139dccfa.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-684b442295b055f9cdba73cb596ffdb733024661042cfaee5637c28350efdd28.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-f8f47356299f63d5a6828b6954f5e92bf82d85370f16410b5ae89d3e1effdd96.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 129.81.123.81 at 2018-12-11 03:16:21 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/google_oauth2" for 129.81.123.81 at 2018-12-11 03:16:23 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 129.81.123.81 at 2018-12-11 03:16:23 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=7d6bc20c7bdb844997a6742b0ffc77300540965e63240243&code=4/sABL5WDLCZg-dVKwCtJAjqEbX-yxuwO9gSFqdhR0JqHodvNkGAZWvOn-78y93rXxHghZWI8SrIXj23sbAS4Qri8&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email" for 129.81.123.81 at 2018-12-11 03:16:24 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"7d6bc20c7bdb844997a6742b0ffc77300540965e63240243", "code"=>"4/sABL5WDLCZg-dVKwCtJAjqEbX-yxuwO9gSFqdhR0JqHodvNkGAZWvOn-78y93rXxHghZWI8SrIXj23sbAS4Qri8", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "google_oauth2"], ["uid", "104988410131088769969"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["oauth_token", "ya29.Gl1vBsyTRWwVuQqwQmGGxiGJ5vIoE3ORdPN_rGmq5S-T10FyAZYtYoq9NubtjNvWdANdMMoETEdpXhTSsWKgPr_WmfKpAHSdMby3jdMH1jfT15Yz64qLDNM6skMh2ZE"], ["oauth_expires_at", "2018-12-11 04:16:24.000000"], ["updated_at", "2018-12-11 03:16:24.423273"], ["id", 3]]
+  [1m[36m (42.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/
+Completed 302 Found in 95ms (ActiveRecord: 44.1ms)
+
+
+Started GET "/" for 129.81.123.81 at 2018-12-11 03:16:24 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered books/home.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 111ms (Views: 109.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/new" for 129.81.123.81 at 2018-12-11 03:16:26 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (31.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 106ms (Views: 94.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books" for 129.81.123.81 at 2018-12-11 03:16:50 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wiuwhgU41WI/jwygjKczJHoplEXoZSQfdqZB9g+FsY0N76Pw/w1xtGfm66CwSlq4GrkMl3LRAe6eKjEtT/tYkw==", "book"=>{"title"=>"The Three Body Problem", "isbn"=>"1234567890", "price"=>"10", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f5a868ad058 @tempfile=#<Tempfile:/tmp/RackMultipart20181211-44002-1a30nzn.jpg>, @original_filename="CBC_Pic1.png.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"CBC_Pic1.png.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Add posting"}
+Unpermitted parameter: image
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "books" ("title", "isbn", "price", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "The Three Body Problem"], ["isbn", "1234567890"], ["price", "10"], ["user_id", 3], ["created_at", "2018-12-11 03:16:50.677592"], ["updated_at", "2018-12-11 03:16:50.677592"]]
+  [1m[35m (27.5ms)[0m  commit transaction
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 52ms (ActiveRecord: 28.3ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:16:50 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBook Load (0.4ms)[0m  SELECT "books".* FROM "books"  ORDER BY "books"."id" DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 76ms (Views: 73.1ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/books/3" for 129.81.123.81 at 2018-12-11 03:16:59 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OYJC7N8dm9Fj9oXdCS24NTSpAY/IuVTgqlZlKQqx9yP2RlGaJSg/BzufYt01wNGpVDmZXVINcRFC2hXySs8ePQ==", "id"=>"3"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 3]]
+  [1m[36m (18.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 24ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:16:59 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 86ms (Views: 81.8ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/books/15" for 129.81.123.81 at 2018-12-11 03:17:02 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"S0LU1fxOhy0IsTIYFJHrAvlSt+hCsOM3TK9gjKTKUI6EhsejBnsj+1DY1RgofIKemcIvOtgExsakIxBX5LS5kA==", "id"=>"15"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 15]]
+  [1m[36m (22.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 27ms (ActiveRecord: 23.6ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:17:02 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered books/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/books/16" for 129.81.123.81 at 2018-12-11 03:17:06 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mh7DUTFXEjTsr3oXZy4Wpaehk6nf3+YyE6kq8ufhrWL92tAny2K24rTGnRdbw385xzELe0Vrw8P7JVopp59EfA==", "id"=>"16"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 16]]
+  [1m[35m (24.2ms)[0m  commit transaction
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 29ms (ActiveRecord: 24.8ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:17:06 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBook Load (0.6ms)[0m  SELECT "books".* FROM "books"  ORDER BY "books"."id" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered books/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 78ms (Views: 75.1ms | ActiveRecord: 2.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddImageToBooks (20181211033003)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "books" ADD "image" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20181211033003"]]
+  [1m[36m (25.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 129.81.123.81 at 2018-12-11 03:36:13 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered books/home.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 489ms (Views: 454.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/new" for 129.81.123.81 at 2018-12-11 03:36:16 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (27.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 91ms (Views: 83.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 129.81.123.81 at 2018-12-11 03:36:29 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8J3vy8OXWkRlcpcsaGbxQJ2vclv7Yht+CYrJa1ADcGk/Wfy9OaL+kj0bcCxUi5jc/T/qiWHWPo/hBrmwEH2Zdw==", "book"=>{"title"=>"The Three Body Problem", "isbn"=>"1234567890", "price"=>"4", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fab6e908f50 @tempfile=#<Tempfile:/tmp/RackMultipart20181211-45019-kxmlew.jpg>, @original_filename="CBC_Pic1.png.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"CBC_Pic1.png.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Add posting"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "books" ("title", "isbn", "price", "image", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The Three Body Problem"], ["isbn", "1234567890"], ["price", "4"], ["image", "CBC_Pic1.png.jpg"], ["user_id", 3], ["created_at", "2018-12-11 03:36:29.615492"], ["updated_at", "2018-12-11 03:36:29.615492"]]
+  [1m[35m (26.6ms)[0m  commit transaction
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 76ms (ActiveRecord: 27.6ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:36:29 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"  ORDER BY "books"."id" DESC
+  Rendered books/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (Version thumb doesn't exist!):
+    30:     <tbody>    
+    31:         <% @books.each do |x| %>
+    32:             <tr>
+    33:                 <td><%= image_tag(x.image_url(:thumb).to_s) %></td>
+    34:                 <td><%= x.title %></td>
+    35:                 <td><%= x.isbn %></td>
+    36:                 <td><%= "$" + x.price %></td>
+  app/views/books/index.html.erb:33:in `block in _app_views_books_index_html_erb___593159718318922496_70187131076220'
+  app/views/books/index.html.erb:31:in `_app_views_books_index_html_erb___593159718318922496_70187131076220'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.7ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:37:09 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"  ORDER BY "books"."id" DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 73ms (Views: 66.0ms | ActiveRecord: 5.9ms)
+
+
+Started DELETE "/books/17" for 129.81.123.81 at 2018-12-11 03:38:04 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yDrBaqmsTrJsMEJufX8/1hAcz4/MPcj3/soVmQXtx1UH/tIcU5nqZDRZpW5BklZKcIxXXVaJ7QYWRmVCRZMuSw==", "id"=>"17"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 17]]
+  [1m[36m (24.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 31ms (ActiveRecord: 25.6ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:38:04 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/new" for 129.81.123.81 at 2018-12-11 03:38:07 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 129.81.123.81 at 2018-12-11 03:38:16 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fY2MOjdUjIh2pPDxD7IBO6k1V9PsV+DfzZkmVlDs71SySZ9MzWEoXi7NF/EzX2inyaXPAXbjxS4lFVaNEJIGSg==", "book"=>{"title"=>"The Three Body Problem", "isbn"=>"1234567890", "price"=>"4", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fab6fc6af80 @tempfile=#<Tempfile:/tmp/RackMultipart20181211-45019-12tq8sv.PNG>, @original_filename="Med_App_Picture_2018.PNG", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"Med_App_Picture_2018.PNG\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add posting"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "books" ("title", "isbn", "price", "image", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "The Three Body Problem"], ["isbn", "1234567890"], ["price", "4"], ["image", "Med_App_Picture_2018.PNG"], ["user_id", 3], ["created_at", "2018-12-11 03:38:16.646834"], ["updated_at", "2018-12-11 03:38:16.646834"]]
+  [1m[36m (28.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 46ms (ActiveRecord: 29.1ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:38:16 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered books/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:54:42 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBook Load (0.4ms)[0m  SELECT "books".* FROM "books"  ORDER BY "books"."id" DESC
+  Rendered books/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Version thumb doesn't exist!):
+    30:     <tbody>    
+    31:         <% @books.each do |x| %>
+    32:             <tr>
+    33:                 <td><%= image_tag(x.image_url(:thumb).to_s) %></td>
+    34:                 <td><%= x.title %></td>
+    35:                 <td><%= x.isbn %></td>
+    36:                 <td><%= "$" + x.price %></td>
+  app/views/books/index.html.erb:33:in `block in _app_views_books_index_html_erb___593159718318922496_70187123492660'
+  app/views/books/index.html.erb:31:in `_app_views_books_index_html_erb___593159718318922496_70187123492660'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.2ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:56:47 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"  ORDER BY "books"."id" DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 163ms (Views: 147.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/uploads/book/image/18/thumb_Med_App_Picture_2018.PNG" for 129.81.123.81 at 2018-12-11 03:56:47 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/uploads/book/image/18/thumb_Med_App_Picture_2018.PNG"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+  puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+  puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+  puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.8ms)
+
+
+Started DELETE "/books/18" for 129.81.123.81 at 2018-12-11 03:56:58 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TWeFgspemszATUmPZ7q8nVDuWZ2FlarPu3TDE38I9BSCo5b0MGs+Gpgkro9bV9UBMH7BTx8hjz5T+LPIP3YdCg==", "id"=>"18"}
+  [1m[35mBook Load (0.4ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 18]]
+  [1m[36m (26.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 33ms (ActiveRecord: 27.1ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:56:58 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/new" for 129.81.123.81 at 2018-12-11 03:57:01 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 129.81.123.81 at 2018-12-11 03:57:12 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DI9NAboqrWWLXTsAhbz0pb8pe7Dg/GObd8oB/A49FtjDS153QB8Js9M03AC5UZ0537njYnpIRmqfRnEnTkP/xg==", "book"=>{"title"=>"The Three Body Problem", "isbn"=>"1234567890", "price"=>"4", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fab6ed4cc60 @tempfile=#<Tempfile:/tmp/RackMultipart20181211-45019-1rx3cw1.PNG>, @original_filename="Med_App_Picture_2018.PNG", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"Med_App_Picture_2018.PNG\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add posting"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "books" ("title", "isbn", "price", "image", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "The Three Body Problem"], ["isbn", "1234567890"], ["price", "4"], ["image", "Med_App_Picture_2018.PNG"], ["user_id", 3], ["created_at", "2018-12-11 03:57:13.362051"], ["updated_at", "2018-12-11 03:57:13.362051"]]
+  [1m[36m (29.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 509ms (ActiveRecord: 30.8ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:57:13 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered books/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:57:32 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"  ORDER BY "books"."id" DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 100ms (Views: 85.0ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/books/19" for 129.81.123.81 at 2018-12-11 03:57:42 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"INa5AE1XZl8aSlSU3JjlU9iLyumahEUEb99E9oZLYHHvEqp2t2LCiUIjs5TgdYzPuBtSOwAwYPWHUzQtxjWJbw==", "id"=>"19"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 19]]
+  [1m[36m (27.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 34ms (ActiveRecord: 28.2ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:57:42 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered books/index.html.erb within layouts/application (58.8ms)
+Completed 200 OK in 116ms (Views: 113.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/new" for 129.81.123.81 at 2018-12-11 03:57:57 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 99ms (Views: 85.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/books" for 129.81.123.81 at 2018-12-11 03:58:12 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qxpsX3N494pfi2wNwCqE0IfeywYL8N743QkyCp55eCNk3n8piU1TXAfiiw38x+1M505T1JFE+wk1hULR3geRPQ==", "book"=>{"title"=>"The Three Body Problem", "isbn"=>"1234567890", "price"=>"4", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fab7034f0a8 @tempfile=#<Tempfile:/tmp/RackMultipart20181211-45019-162ye03.PNG>, @original_filename="Med_App_Picture_2018.PNG", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"Med_App_Picture_2018.PNG\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Add posting"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "books" ("title", "isbn", "price", "image", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "The Three Body Problem"], ["isbn", "1234567890"], ["price", "4"], ["image", "Med_App_Picture_2018.PNG"], ["user_id", 3], ["created_at", "2018-12-11 03:58:12.739497"], ["updated_at", "2018-12-11 03:58:12.739497"]]
+  [1m[36m (26.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://textbook-exchange-shees-a.c9users.io/index
+Completed 302 Found in 538ms (ActiveRecord: 27.9ms)
+
+
+Started GET "/index" for 129.81.123.81 at 2018-12-11 03:58:12 +0000
+Cannot render console from 129.81.123.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"  ORDER BY "books"."id" DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered books/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 86ms (Views: 83.4ms | ActiveRecord: 1.5ms)

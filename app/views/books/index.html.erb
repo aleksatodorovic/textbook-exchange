@@ -30,7 +30,7 @@
     <tbody>    
         <% @books.each do |x| %>
             <tr>
-                <td><%= image_tag x.image.thumb.url %></td>
+                <td><%= image_tag(x.image_url(:thumb).to_s) %></td>
                 <td><%= x.title %></td>
                 <td><%= x.isbn %></td>
                 <td><%= "$" + x.price %></td>
