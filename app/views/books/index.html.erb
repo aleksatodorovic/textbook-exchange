@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 <div class="spaceitout">
 <div id="better">
+=======
+
+
+>>>>>>> pagination
 <h2> Books for Sale</h2>
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.css"/>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.js"></script>
 
 <div class="table-book">
-<table id="bookDisplay" class="table table-striped table-bordered" cellspacing="0" width="100%"> 
+<table id="bookDisplay" class="table table-striped table-bordered table-hover sortable" cellspacing="0" width="100%"> 
     <thead>
         <tr>
             <th colspan="2">
@@ -60,4 +68,11 @@
     
 </table>
 </div>
-</div>
+
+<div class="digg_pagination">
+    <div class="page_info">
+      <%= page_entries_info @books %>
+    </div>
+    <%= will_paginate @books, :container => false %>
+  </div>
+
