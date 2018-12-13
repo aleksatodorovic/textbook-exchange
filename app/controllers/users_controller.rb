@@ -25,7 +25,8 @@ class UsersController < ApplicationController
     end
 	
 	def profile
-	    @user = User.new
+	    @users = current_user
+	    @books = @users.book
 	end
 	
 	def show 
