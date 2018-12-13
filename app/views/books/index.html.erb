@@ -47,7 +47,7 @@
         <% @books.each do |x| %>
             <tr>
                 <td><%= image_tag(x.image_url(:thumb).to_s) %></td>
-                <td><%= x.title %></td>
+                <td><%= link_to x.title, book_path(x), method: :get %></td>
                 <td><%= x.isbn %></td>
                 <td><%= "$" + x.price %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
