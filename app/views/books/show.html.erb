@@ -9,3 +9,11 @@
 <%= @books.condition %>
 <br>
 <%= @books.description %>
+
+<br>
+<p>Posted by </p><%= link_to @books.user.name, user_path(@books.user),  method: :get %>
+<br>
+
+<% if @books.user.id == current_user.id %>
+    <button onclick="alert('Are you sure?')"><%= button_to 'Complete Sale', @books, method: :sell, data: {confirm: 'Are you sure?'} %></button>
+<% end %>
