@@ -1,0 +1,15 @@
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/index.scss */
+.table-book {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* line 8, /home/ubuntu/workspace/app/assets/stylesheets/index.scss */
+.table-wrapper-scroll-y {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
