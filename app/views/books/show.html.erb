@@ -1,31 +1,34 @@
 <div class="spaceitout">
 <div id="better">
 <table>
+    <th colspan="3">
+        <%= @books.title %>
+    </th>
     <tr>
         <td rowspan="3">
              <%= image_tag(@books.image_url(:thumb).to_s) %>  
         </td>
         <td>
-            <%= @books.title %>
+            <%= "ISBN: " + @books.isbn %>
         </td>
         <td>
-            <%= link_to @books.user.name, user_path(@books.user),  method: :get %>
+            <%= "$" + @books.price %>
         </td>
     </tr>
     <tr>
         <td>
-            <%= @books.isbn %>
+            <%= "Condition: " + @books.condition %>
         </td>
         <td>
-            <%= @books.description %>
+            <%= link_to @books.user.name, user_path(@books.user),  method: :get %>
         </td>
     </tr>         
     <tr>
         <td>
-            <%= @books.subject %>
+            <%= "Subject: " + @books.subject %>
         </td>
         <td>
-            <%= @books.condition %>
+            <%= "Description: " + @books.description %>
         </td>
         </td>
     </tr>
