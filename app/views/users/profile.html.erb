@@ -26,6 +26,9 @@
                 <td><%= x.isbn %></td>
                 <td><%= "$" + x.price %></td>
                 <td><%= current_user.name %></td>
+            <% if logged_in? %>
+                <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+            <% end %>
             </tr>
         <% end %>
     </tbody>

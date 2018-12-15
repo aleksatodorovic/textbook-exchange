@@ -39,7 +39,7 @@
                     <div class="entry">
                         <tr>
                             <td colspan="2">
-                                <%= x.title %>
+                                <%= link_to x.title, book_path(x), method: :get %>
                             </td>
                         </tr>
                         <tr>
@@ -72,6 +72,13 @@
                 <td><%= x.isbn %></td>
                 <td><%= "$" + x.price %></td>
                 <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
+                <% if logged_in? %>
+                    <% if current_user.id == x.user_id %>
+                        <td><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                    <%end%>
+                <%end%>
+ 
+
             </tr>
         <% end %>
     </tbody>
