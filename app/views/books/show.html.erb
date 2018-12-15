@@ -1,5 +1,40 @@
-<%= @books.title %>
-<br>
+<div class="spaceitout">
+<div id="better">
+<table>
+    <tr>
+        <td>
+             <%= @books.image %>     
+        </td>
+        <td>
+            <tr>
+                <td>
+                    <%= @books.title %>
+                </td>
+                <td>
+                    <%= @books.user.name %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <%= @books.isbn %>
+                </td>
+                <td>
+                    <%= @books.description %>
+                </td>
+            </tr>         
+            <tr>
+                <td>
+                    <%= @books.subject %>
+                </td>
+                <td>
+                    <%= @books.condition %>
+                </td>
+            </tr>
+        </td>
+    </tr>
+</table>
+
+
 <%= @books.price %>
 <br>
 <%= @books.isbn %>
@@ -13,7 +48,5 @@
 <br>
 <p>Posted by </p><%= link_to @books.user.name, user_path(@books.user),  method: :get %>
 <br>
-
-<% if @books.user.id == current_user.id %>
-    <button onclick="alert('Are you sure?')"><%= button_to 'Complete Sale', @books, method: :sell, data: {confirm: 'Are you sure?'} %></button>
-<% end %>
+</div>
+</div>
