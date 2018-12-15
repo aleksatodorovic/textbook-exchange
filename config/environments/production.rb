@@ -1,9 +1,16 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  
+  
+  
   config.consider_all_requests_local = false
   config.action_controller.perform_caching = true
   # Code is not reloaded between requests.
   config.cache_classes = true
+  # Enable the asset pipeline
+  config.assets.enabled = true
+# Version of your assets, change this if you want to expire all your assets
+  config.assets.version = '1.0'
   
 
 
@@ -14,8 +21,6 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = false
-  config.action_controller.perform_caching = true
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
