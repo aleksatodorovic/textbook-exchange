@@ -64,9 +64,6 @@ form {
     text-align: left;
 }
 
-h2 {
-    padding: 16px;
-}
 
 /* Add a  background color to the top navigation */
 .topnav {
@@ -92,6 +89,9 @@ div.spaceitout {
 
 .topnav a:hover {
     border-bottom: 3px solid blue;
+}
+h1,h2 {
+    padding-bottom: 20px ;
 }
 
 

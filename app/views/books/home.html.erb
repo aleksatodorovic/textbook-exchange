@@ -1,9 +1,9 @@
 <div class="spaceitout">
 <div id="better">
     <% if logged_in? %>
-        <h2> Hello <%= current_user.name %></h2>
+        <h1> Hello <%= current_user.name %></h1>
     <% else %>
-        <h2>Welcome. Please log in</h2>
+        <h1>Welcome. Please log in.</h1>
     
         <title>Google Auth Example App</title>
         <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
