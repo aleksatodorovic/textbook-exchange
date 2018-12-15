@@ -36,7 +36,11 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                            <%= link_to x.user.name, user_path(x.user),  method: :get %>
+                                                            <% if current_user.id == x.user_id %>
+                                                                <%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-primary"  %>
+                                                            <% else %>
+                                                                <%= x.user.name %>
+                                                            <% end %>
                                                     </td>
                                                 </tr>
                                             </div>

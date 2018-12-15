@@ -32,7 +32,15 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
+                                                        <% if logged_in? %>
+                                                            <% if current_user.id == x.user_id %>
+                                                                <%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-primary"  %>
+                                                            <% else %>
+                                                                <%= x.user.name %>
+                                                            <% end %>
+                                                        <%else%>
                                                             <%= x.user.name %>
+                                                        <% end %>
                                                     </td>
                                                 </tr>
                                             </div>
@@ -41,6 +49,7 @@
                                 </div>
                                                                         </table>
                             </tr>
+
                         <% end %>
                     </tr>
                 </tbody>

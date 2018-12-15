@@ -56,7 +56,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
+                                                                                                                <% if logged_in? %>
+                                                            <% if current_user.id == x.user_id %>
+                                                                <%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-primary"  %>
+                                                            <% else %>
+                                                                <%= link_to x.user.name, user_path(x.user),  method: :get %>
+                                                            <% end %>
+                                                        <%else%>
                                                             <%= link_to x.user.name, user_path(x.user),  method: :get %>
+                                                        <% end %>
+        
                                                     </td>
                                                 </tr>
                                             </div>
