@@ -26,14 +26,6 @@
                 <td><%= x.isbn %></td>
                 <td><%= "$" + x.price %></td>
                 <td><%= current_user.name %></td>
-                <% if logged_in? %>
-                    <% if current_user.id == x.user_id %>
-                        <td><button onclick="alert('Are you sure?')"><%= button_to 'Delete', x, method: :delete, data: {confirm: 'Are you sure?'} %></button></td>
- 
-                    <% else %>
-                        <td><%= button_to 'More info', book_path(x), method: :get %></td>
-                    <% end %>
-                <% end %>
             </tr>
         <% end %>
     </tbody>
