@@ -1,13 +1,13 @@
 <div class="spaceitout">
 <div id="better">
-<h2><%= "Hello, " + current_user.name =%> </h2>
+<h1><%= "Hello, " + current_user.name =%> </h1>
 
 
 
 <h2>Your Books</h2>
 
 <table>
-     <tbody>
+       <tbody>
                     <tr colspan="2">
                         <% @books.each do |x| %>
                             <tr>
@@ -17,7 +17,7 @@
                                             <div class="entry-top">
                                                 <tr>
                                                     <th colspan="2", class="entry-top">
-                                                        <%= link_to x.title, book_path(x), method: :get %>
+                                                        <h2><%= link_to x.title, book_path(x), method: :get %></h2>
                                                     </th>
                                                 </tr>
                                             </div>
@@ -36,7 +36,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <%= "Sold by: " + x.user.name %>
+                                                            <%= link_to x.user.name, user_path(x.user),  method: :get %>
                                                     </td>
                                                 </tr>
                                             </div>
