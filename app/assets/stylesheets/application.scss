@@ -44,6 +44,16 @@
     padding: 20px; 
 }
 
+td {
+    width:100px; 
+    word-wrap:break-word;
+    text-align: left;
+}
+
+td.imagetable{
+    text-align: center;
+}
+
 
 table {
   width: 100%;
