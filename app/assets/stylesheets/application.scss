@@ -24,7 +24,6 @@
     min-height: 400px;
    margin-bottom: 100px;
    clear: both;
-
 }
 
 #better {
@@ -36,6 +35,20 @@
     padding: 20px; 
 }
 
+#entrybetter {
+    background-color: #F2F7FF;
+    padding: 14px 16px;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px;
+    padding: 20px; 
+}
+
+
+table {
+  width: 100%;
+  table-layout: auto;
+}
 
 form {
     text-align: left;

@@ -1,89 +1,91 @@
 
 <div class="spaceitout">
-<div id="better">
-
-<h2> Books for Sale</h2>
-
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.css"/>
-
-<script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.js"></script>
-
-<div class="table-book">
-<table id="bookDisplay" class="table table-striped table-bordered table-hover sortable" cellspacing="0" width="100%"> 
-    <thead>
-        <tr>
-            <th colspan="2">
-                <% if logged_in? %>
-                    <%= link_to "Add Your Book", "/new", class: "btn btn-primary" %>
-                <% else %>
-                    <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "btn btn-primary" %>
-                <%end %>
-                </th>
-            <th colspan="3">
-                <form class="pull-right">
-                    <div class="input-group">
-                        <%= form_tag books_path, :method => :get do %> 
-                            <%= text_field_tag :search, params[:search], placeholder: "Search Books", class: 'form-control' %>
-                            <span class="input-group-btn">
-                               <%= submit_tag "Search", class: 'btn btn-default' %>
-                            </span>
+    <div id="better">
+        <h2> Books for Sale</h2>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.css"/>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.3/dt-1.10.12/datatables.min.js"></script>
+        <div class="table-book">
+            <table id="bookDisplay" class="table sortable" cellspacing="0" width="100%"> 
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <% if logged_in? %>
+                                <%= link_to "Interested in Selling? Add Your Own Book", "/new", class: "btn btn-primary" %>
+                            <% else %>
+                                <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "btn btn-primary" %>
+                            <%end %>
+                            </th>
+                        <th colspan="3">
+                            <form class="pull-right">
+                                <div class="input-group">
+                                    <%= form_tag books_path, :method => :get do %> 
+                                        <%= text_field_tag :search, params[:search], placeholder: "Search Books", class: 'form-control' %>
+                                        <span class="input-group-btn">
+                                           <%= submit_tag "Search", class: 'btn btn-default' %>
+                                        </span>
+                                    <% end %>
+                                </div>
+                            </form>
+                        </th>
+                </thead>
+                <tbody>
+                    <tr colspan="2">
+                        <% @books.each do |x| %>
+                            <td>
+                                <div class="spaceitout">
+                                    <div id="entrybetter">
+                                        <table>
+                                            <div class="entry-top">
+                                                <tr>
+                                                    <th colspan="2">
+                                                        <%= link_to x.title, book_path(x), method: :get %>
+                                                    </th>
+                                                </tr>
+                                            </div>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                         <%= image_tag(x.image_url(:thumb).to_s) %>  
+                                                    </td>
+                                                    <td>
+                                                        <%= "ISBN: " + x.isbn %>
+                                                    </td>
+                                                </tr>         
+                                                <tr>
+                                                    <td>
+                                                        <%= "$" + x.price %>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <%= "Sold by: " + x.user.name %>
+                                                    </td>
+                                                </tr>
+                                            </div>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
                         <% end %>
-                    </div>
-                </form>
-            </th>
-    </thead>
-    <tbody>
-        <div class="row">
-            <% @books.each do |x| %>
-                <div class="col-sm-6 col-md-3">
-                    <div class="entry">
+                    </tr>
+                    <% @books.each do |x| %>
                         <tr>
-                            <td colspan="2">
-                                <%= x.title %>
-                            </td>
+                            <td><%= image_tag(x.image_url(:thumb).to_s) %></td>
+                            <td><%= link_to x.title, book_path(x), method: :get %></td>
+                            <td><%= x.isbn %></td>
+                            <td><%= "$" + x.price %></td>
+                            <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
                         </tr>
-                        <tr>
-                        <tr>
-                            <td rowspan="3">
-                                 <%= image_tag(x.image_url(:thumb).to_s) %>  
-                            </td>
-                            <td>
-                                <%= "ISBN: " + x.isbn %>
-                            </td>
-                        </tr>         
-                        <tr>
-                            <td>
-                                <%= "$" + x.price %>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <%= "Sold by: " + x.user.name %>
-                            </td>
-                        </tr>
-                    </div>
-                </div>
-            <% end %>
+                    <% end %>
+                </tbody>
+                
+            </table>
         </div>
-        <% @books.each do |x| %>
-            <tr>
-                <td><%= image_tag(x.image_url(:thumb).to_s) %></td>
-                <td><%= link_to x.title, book_path(x), method: :get %></td>
-                <td><%= x.isbn %></td>
-                <td><%= "$" + x.price %></td>
-                <td><%= @users.find_by_id(x.user).name unless @users.find_by_id(x.user).nil?%></td>
-            </tr>
-        <% end %>
-    </tbody>
-    
-</table>
-</div>
-
-<div class="apple_pagination">
-    <div class="page_info">
-      <%= page_entries_info @books %>
+        
+        <div class="apple_pagination">
+            <div class="page_info">
+              <%= page_entries_info @books %>
+            </div>
+            <%= will_paginate @books, :container => false %>
+          </div>
     </div>
-    <%= will_paginate @books, :container => false %>
-  </div>
-</div>
 </div>
