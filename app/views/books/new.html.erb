@@ -21,28 +21,28 @@
             </div>
          </div>
          <div class="form-group">
-            <%= bt.label :condition, "Condition: ", class: "col-md-4 control-label" %>
+            <%= bt.label :condition, "Condition ", class: "col-md-4 control-label" %>
             <div class="col-md-8">
                <%= bt.text_field :condition, placeholder: "Used", required: true, class: "form-control" %>
             </div>
          </div>
          
          <div class="form-group">
-            <%= bt.label :subject, "Subject: ", class: "col-md-4 control-label" %>
+            <%= bt.label :subject, "Subject ", class: "col-md-4 control-label" %>
             <div class="col-md-8">
                <%= bt.text_field :subject, placeholder: "Algorithms", required: true, class: "form-control" %>
             </div>
          </div>
          <div class="form-group">
-            <%= bt.label :description, "Description: ", class: "col-md-4 control-label" %>
+            <%= bt.label :description, "Description", class: "col-md-4 control-label" %>
             <div class="col-md-8">
                <%= bt.text_field :description, placeholder: "Please describe the book that you are selling and include your contact information", required: true, class: "form-control" %>
             </div>
          </div>
          <div class="form-group">
-            <%= bt.label :image, "Upload a Photo of the Book: ", class: "col-md-4 control-label" %>
+            <%= bt.label :image, "Upload a Photo of the Book", class: "col-md-4 control-label" %>
             <div class="col-md-8">
-               <%= bt.file_field :image, :min => 0, :step => 0.01, placeholder: "image.jpg", required: true, class: "form-control" %>
+               <%= bt.file_field :image, :min => 0, :step => 0.01, placeholder: "image.jpg", required: true, class: "form-control", class: "btn btn-default" %>
             </div>
          </div>
          <%= bt.submit "Add posting", class: "btn btn-primary" %>

@@ -1,27 +1,24 @@
 <div class="spaceitout">
 <div id="better">
-<h2><%= @user.name %> </h2>
 
-
-
-<h2> <%= @user.name %> Books</h2>
+<h2> <%= @user.name + "\'s Books" =%> </h2>
 <table> 
- <tbody>
+      <tbody>
                     <tr colspan="2">
                         <% @books.each do |x| %>
-                            <td>
-                                <div class="spaceitout">
-                                    <div id="entrybetter">
+                            <tr>
                                         <table>
+                                             <div class="spaceitout">
+                                    <div id="entrybetter">
                                             <div class="entry-top">
                                                 <tr>
-                                                    <th colspan="2">
+                                                    <th colspan="2", class="entry-top">
                                                         <%= link_to x.title, book_path(x), method: :get %>
                                                     </th>
                                                 </tr>
                                             </div>
                                                 <tr>
-                                                    <td rowspan="3">
+                                                    <td rowspan="3", class="imagetable">
                                                          <%= image_tag(x.image_url(:thumb).to_s) %>  
                                                     </td>
                                                     <td>
@@ -39,10 +36,11 @@
                                                     </td>
                                                 </tr>
                                             </div>
-                                        </table>
+
                                     </div>
                                 </div>
-                            </td>
+                                                                        </table>
+                            </tr>
                         <% end %>
                     </tr>
                 </tbody>
