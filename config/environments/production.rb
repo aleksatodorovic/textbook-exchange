@@ -1,6 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.consider_all_requests_local = false
+  config.action_controller.perform_caching = true
   # Code is not reloaded between requests.
   config.cache_classes = true
   
@@ -36,6 +37,10 @@ Rails.application.configure do
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
+  
+  config.cache_classes = true
+  config.serve_static_assets = true
+  
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
