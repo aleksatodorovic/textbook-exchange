@@ -31,16 +31,40 @@
                     </div>
                 </form>
             </th>
-        </tr>
-        <tr>
-            <th>Image</th>
-            <th>Title</th>
-            <th>ISBN</th>
-            <th>Price</th>
-            <th>Added by</th>
-        </tr>
     </thead>
-    <tbody>    
+    <tbody>
+        <div class="row">
+            <% @books.each do |x| %>
+                <div class="col-sm-6 col-md-3">
+                    <div class="entry">
+                        <tr>
+                            <td colspan="2">
+                                <%= x.title %>
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td rowspan="3">
+                                 <%= image_tag(x.image_url(:thumb).to_s) %>  
+                            </td>
+                            <td>
+                                <%= "ISBN: " + x.isbn %>
+                            </td>
+                        </tr>         
+                        <tr>
+                            <td>
+                                <%= "$" + x.price %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <%= "Sold by: " + x.user.name %>
+                            </td>
+                        </tr>
+                    </div>
+                </div>
+            <% end %>
+        </div>
         <% @books.each do |x| %>
             <tr>
                 <td><%= image_tag(x.image_url(:thumb).to_s) %></td>

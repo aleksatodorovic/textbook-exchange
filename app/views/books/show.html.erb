@@ -9,7 +9,7 @@
             <%= @books.title %>
         </td>
         <td>
-            <%= @books.user.name %>
+            <%= link_to @books.user.name, user_path(@books.user),  method: :get %>
         </td>
     </tr>
     <tr>
@@ -30,7 +30,5 @@
         </td>
     </tr>
 </table>
-<p>Posted by </p><%= link_to @books.user.name, user_path(@books.user),  method: :get %>
-<br>
 </div>
 </div>
