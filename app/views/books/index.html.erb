@@ -14,7 +14,7 @@
         <tr>
             <th colspan="2">
                 <% if logged_in? %>
-                    <a href="/new">Add a Book</a>
+                    <%= link_to "Add Your Book", "/new", class: "btn btn-primary" %>
                 <% else %>
                     <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: "btn btn-primary" %>
                 <%end %>
